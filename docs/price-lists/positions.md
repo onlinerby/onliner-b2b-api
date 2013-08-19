@@ -15,21 +15,22 @@
 ### Пример. Список позиций указанного товара
 
 ```
-GET /sections/2/manufacturers/1/products/1
+GET /sections/2/manufacturers/1/products/1/positions
 ```
 
 ```json
 {
     "id": 1,
-    "sectionId": 2,
-    "manufacturerId": 1,
-    "productId": 1,
-    "productTitle": "LG BD75",
-    "price": 100,
-    "isCashless": false,
-    "status": "none",
-    "description": "Comment",
-    "warranty": 12,
-    "delivery": "none"
+    "category":"MP3-плееры",
+    "vendor":"Apple",
+    "model":"iPod classic 160Gb",
+    "price":50,
+    "currency":"USD",
+    "status":"нет",
+    "comment":"Test",
+    "warranty":"12",
+    "delivery":"бесплатная",
+    "isCashless":"да",
+    "isCredit":"да"
 }
 ```
