@@ -59,7 +59,7 @@
 - [DELETE /pricelists/{positionId}](docs/price-lists/delete/one.md)
     - Удаляет конкретную позицию товара
 - [DELETE /priceists](docs/price-lists/delete/list.md)
-    - При наличии списка "list" удаляет позиции товаров, ID которых перечисланы в списке
+    - При наличии списка удаляет позиции товаров, ID которых перечисланы в списке
     
 ### Обновление актуальности
 
