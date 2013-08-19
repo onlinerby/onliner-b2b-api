@@ -47,7 +47,7 @@
 
 - [GET /pricelists/{pricelistId}/status](docs/price-lists/import/status.md)
     - Возвращает статус обработки прайс-листа
-- [GET /pricelists/{pricelistId}/report](docs/price-lists/report.md)
+- [GET /pricelists/{pricelistId}/report](docs/price-lists/import/report.md)
     - Возвращает список ошибок, возникших во время импорта
     
 ### Удаление позиции товара
