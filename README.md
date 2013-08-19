@@ -40,7 +40,7 @@
 
 - [PATCH /pricelists](docs/price-lists/import/update.md)
     - Добавление и редактирование позиций
-- [PUT /pricelists](docs/import/price-lists/import/replace.md)
+- [PUT /pricelists](docs/price-lists/import/replace.md)
     - Загрузка нового прайс-листа
 
 ### Отчет по импорту
