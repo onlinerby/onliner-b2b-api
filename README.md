@@ -74,7 +74,7 @@
     - Возвращает полный список позиций магазина
 - [GET /sections/{sectionId}/positions](docs/price-lists/export/sections.md)
     - Возвращает список позиций для указанного раздела
-- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/positions](docs/eprice-lists/export/manufacturers.md)
+- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/positions](docs/price-lists/export/manufacturers.md)
     - Возвращает список позиций для указанного производителя
 - [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions](docs/price-lists/export/products.md)
     - Возвращает список позиций для указанного товара
