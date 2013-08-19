@@ -33,20 +33,18 @@ Accept: application/json
 ```json
 [
     {
-        "id": "1",
-        "shop_id": "1",
-        "section_id": "2",
-        "manufacturer_id": "851",
-        "product_id": "53808",
-        "price": "0",
-        "currency": "USD",
-        "is_credit": "0",
-        "is_cashless": "0",
-        "status": "none",
-        "delivery": "paid",
-        "warranty": "0",
-        "comment": "",
-        "date_update": "0000-00-00 00:00:00"
+        "id":"4",
+        "category":"MP3-плееры",
+        "vendor":"Apple",
+        "model":"iPod nano 16Gb (7th generation)",
+        "price":200,
+        "currency":"USD",
+        "status":"спец",
+        "comment":"Test1",
+        "warranty":"12",
+        "delivery":"на следующий день",
+        "isCashless":"нет",
+        "isCredit":"нет"
     }
 ]
 ```
