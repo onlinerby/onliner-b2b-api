@@ -22,7 +22,7 @@
     - Возвращает параметры указанного раздела
 - [GET /sections/{sectionId}/manufacturers](docs/catalog/manufacturers.md)
     - Возвращает список производителей в указанном разделе
-- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products](docs/catalog.products.md)
+- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products](docs/catalog/products.md)
     - Возвращает список товаров указанного производителя
 - [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions](docs/price-lists/positions.md)
     - Возвращает список позиций указанного товара    
