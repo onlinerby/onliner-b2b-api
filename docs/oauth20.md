@@ -6,7 +6,8 @@
 
 Пример с использованием библиотеки curl:
 ```
-curl -u 204da9b95e2480a3455f:7a4bbb61262fdf41d410645292a0489ba752c6b9 https://b2bapi.onliner.by/oauth/token -d 'grant_type=client_credentials'
+curl -u 204da9b95e2480a3455f:7a4bbb61262fdf41d410645292a0489ba752c6b9 https://b2bapi.onliner.by/oauth/token \
+-H 'Accept: application/json' -d 'grant_type=client_credentials'
 ```
 
 # Запрос к API
