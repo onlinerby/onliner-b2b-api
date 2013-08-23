@@ -28,6 +28,25 @@ Accept: application/json
 Content-Type: application/json
 Data: [{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]
 ```
+### Привер запроса на языке php
+```php
+$data = '[{"category":"AV-ресиверы и усилители","vendor":"Anthem","model":"A2","price":"10000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]';
+$process = curl_init("https://b2bapi.onliner.by/pricelists");
+curl_setopt(
+	$process, 
+	CURLOPT_HTTPHEADER, 
+	array(
+		'Accept: application/json', 
+		'Content-Type: application/json', 
+		'Authorization: Bearer RECIVED_TOKEN_STRING'
+	)
+);
+curl_setopt($process, CURLOPT_CUSTOMREQUEST, 'PATCH');
+curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($process, CURLOPT_POSTFIELDS, $data);
+$result = curl_exec($process);
+curl_close($process);
+```
 
 ```json
 HTTP/1.1 202 Accepted
