@@ -28,7 +28,7 @@ Accept: application/json
 Content-Type: application/json
 Data: [{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]
 ```
-### Привер запроса на языке php
+### Пример запроса на языке php
 ```php
 $data = '[{"category":"AV-ресиверы и усилители","vendor":"Anthem","model":"A2","price":"10000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]';
 $process = curl_init("https://b2bapi.onliner.by/pricelists");
