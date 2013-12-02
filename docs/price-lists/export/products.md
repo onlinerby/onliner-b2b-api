@@ -1,33 +1,45 @@
 # Экспорт данных
 
-## GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions
+## GET /`<version>`/sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions
 
 Возвращает список позиций для указанного товара
 
-- Ресурс **/sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions**
+- Ресурс **/`<version>`/sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions**
 - HTTP-метод **GET**
-- Формат ответа **CSV|JSON|XML**
+- Формат ответа **`CSV`|`JSON`|`XML`**
 
 ### Параметры
 
-*нет параметров*
+-   `currency` [optional] - Валюта, в которой нужно вернуть цены (`BYR`, `USD` или `EUR`).
+    - Если параметр не передан, то цены позиций будут возвращены в той валюте, которая указана в списке позиций.
+    - Если передана неправильная валюта, будет возвращена ошибка:
+
+        ```
+HTTP/1.1 400 Bad Request
+{"errors": ["Unknown currency code CODE_SENT"]}
+```
+    - Если параметр `currency` передан пустым, будет возвращена ошибка:
+
+        ```
+HTTP/1.1 400 Bad Request
+{"errors": ["'currency' can not be emty"]}
+```
+
+Вне зависимости от того, в каком формате данные запрашиваются, текст ошибки возвращается в формате `json`.
 
 ### Запрос нужного формата данных
 
 Чтобы получить нужный вам формат данных, добавьте в запрос заголовок Accept:
 
-- CSV
-    - Accept: text/csv
-- JSON
-    - Accept: application/json
-- XML
-    - Accept: application/xml
+- `json` - application/vnd.onliner.`<version>`+json;
+- `xml` - application/vnd.onliner.`<version>`+xml;
+- `csv` - application/vnd.onliner.`<version>`+csv.
 
-### Пример. Список позиций для указанного товара
+### Пример. Список позиций для товара в валюте, указанной для позиции
 
 ```
-GET /sections/2/manufacturers/851/products/53808/positions
-Accept: application/json
+GET /<version>/sections/2/manufacturers/851/products/53808/positions
+Accept: application/vnd.onliner.v2+json
 ```
 
 ```json
@@ -47,4 +59,24 @@ Accept: application/json
         "isCredit":"нет"
     }
 ]
+```
+
+### Пример 2. Передана неправильная валюта для экспорта
+```
+GET /<version>/sections/2/manufacturers/851/products/53808/positions?currency=FOO
+Accept: application/vnd.onliner.v2+json
+```
+```
+HTTP/1.1 400 Bad Request
+{"errors": ["Unknown currency code FOO"]}
+```
+
+### Пример 3. Передан парамерт `currency` без значения
+```
+GET /<version>/sections/2/manufacturers/851/products/53808/positions?currency=
+Accept: application/vnd.onliner.v2+json
+```
+```
+HTTP/1.1 400 Bad Request
+{"errors": ["'currency' can not be emty"]}
 ```
