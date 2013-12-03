@@ -58,7 +58,7 @@ GET /sections/2/manufacturers/851/positions
 Accept: application/json
 ```
 
-```json
+    ```json
 [
     {
         "id":"4",
