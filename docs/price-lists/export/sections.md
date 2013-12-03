@@ -28,7 +28,7 @@ HTTP/1.1 400 Bad Request
 
         ```
 HTTP/1.1 400 Bad Request
-{"errors": ["'currency' can not be emty"]}
+{"errors": ["'currency' can not be empty"]}
 ```
 
 Вне зависимости от того, в каком формате данные запрашиваются, текст ошибки возвращается в формате `json`.
@@ -37,9 +37,17 @@ HTTP/1.1 400 Bad Request
 
 Чтобы получить нужный вам формат данных, добавьте в запрос заголовок Accept:
 
-- `json` - application/vnd.onliner.`<version>`+json;
-- `xml` - application/vnd.onliner.`<version>`+xml;
-- `csv` - application/vnd.onliner.`<version>`+csv.
+- для версии `v1`
+
+    - `json` - application/json
+    - `xml` - application/xml
+    - `csv` - text/csv
+
+- для версии `v2`
+
+    - `json` - application/vnd.onliner.v2+json
+    - `xml` - application/vnd.onliner.v2+xml
+    - `csv` - application/vnd.onliner.v2+csv
 
 ### Пример 1. Список позиций для раздела в валюте, указанной для позиции
 
@@ -100,7 +108,7 @@ Accept: application/json
 - Версия `v2`
 
     ```
-GET /sections/2/positions
+GET /v2/sections/2/positions
 Accept: application/vnd.onliner.v2+json
 ```
 
