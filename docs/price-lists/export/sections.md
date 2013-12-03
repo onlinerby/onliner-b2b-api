@@ -161,7 +161,7 @@ Accept: application/vnd.onliner.v2+json
 
 ### Пример 2. Передана неправильная валюта для экспорта
 ```
-GET /sections/2/positions?currency=FOO
+GET /v2/sections/2/positions?currency=FOO
 Accept: application/vnd.onliner.v2+json
 ```
 ```
@@ -171,10 +171,10 @@ HTTP/1.1 400 Bad Request
 
 ### Пример 3. Передан парамерт `currency` без значения
 ```
-GET /sections/2/positions?currency=
+GET /v2/sections/2/positions?currency=
 Accept: application/vnd.onliner.v2+json
 ```
 ```
 HTTP/1.1 400 Bad Request
-{"errors": ["'currency' can not be emty"]}
+{"errors": ["'currency' can not be empty"]}
 ```
