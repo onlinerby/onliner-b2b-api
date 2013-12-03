@@ -1,18 +1,24 @@
 # Экспорт данных
 
-## GET /`<version>`/sections/{sectionId}/positions
+## GET /sections/{sectionId}/positions
 
 Возвращает список позиций для указанного раздела
 
-- Ресурс **/`<version>`/sections/{sectionId}/positions**
+- Ресурс **/sections/{sectionId}/positions**
 - HTTP-метод **GET**
 - Формат ответа **`CSV`|`JSON`|`XML`**
 
 ### Параметры
 
--   `currency` [optional] - Валюта, в которой нужно вернуть цены (`BYR`, `USD` или `EUR`).
-    - Если параметр не передан, то цены позиций будут возвращены в той валюте, которая указана в списке позиций.
-    - Если передана неправильная валюта, будет возвращена ошибка:
+- Версия `v1`
+    
+    *нет параметров*
+
+- Версия `v2`
+
+    -   `currency` [optional] - Валюта, в которой нужно вернуть цены (`BYR`, `USD` или `EUR`).
+        - Если параметр не передан, то цены позиций будут возвращены в той валюте, которая указана в списке позиций.
+        - Если передана неправильная валюта, будет возвращена ошибка:
 
         ```
 HTTP/1.1 400 Bad Request
@@ -37,12 +43,68 @@ HTTP/1.1 400 Bad Request
 
 ### Пример 1. Список позиций для раздела в валюте, указанной для позиции
 
-```
-GET /<version>/sections/2/positions
-Accept: application/vnd.onliner.<version>+json
+- Версия `v1`
+
+    ```
+GET /sections/2/positions
+Accept: application/json
 ```
 
-```json
+    ```json
+[
+    {
+        "id":"4",
+        "category":"MP3-плееры",
+        "vendor":"Apple",
+        "model":"iPod nano 16Gb (7th generation)",
+        "price":200,
+        "currency":"USD",
+        "status":"спец",
+        "comment":"Test1",
+        "warranty":"12",
+        "delivery":"на следующий день",
+        "isCashless":"нет",
+        "isCredit":"нет"
+    },
+    {
+        "id":"5",
+        "category":"MP3-плееры",
+        "vendor":"Apple",
+        "model":"iPod nano 16Gb (7th generation)",
+        "price":250,
+        "currency":"USD",
+        "status":"спец",
+        "comment":"Test2",
+        "warranty":"12",
+        "delivery":"нет",
+        "isCashless":"нет",
+        "isCredit":"нет"
+    },
+    {
+        "id":"6",
+        "category":"MP3-плееры",
+        "vendor":"Apple",
+        "model":"iPod nano 16Gb (7th generation)",
+        "price":300,
+        "currency":"USD",
+        "status":"нет",
+        "comment":"Test3",
+        "warranty":"12",
+        "delivery":"платная",
+        "isCashless":"нет",
+        "isCredit":"нет"
+    }
+]
+```
+
+- Версия `v2`
+
+    ```
+GET /sections/2/positions
+Accept: application/vnd.onliner.v2+json
+```
+
+    ```json
 [
     {
         "id":"4",
@@ -91,22 +153,20 @@ Accept: application/vnd.onliner.<version>+json
 
 ### Пример 2. Передана неправильная валюта для экспорта
 ```
-GET /<version>/sections/2/positions?currency=FOO
-Accept: application/vnd.onliner.<version>+json
+GET /sections/2/positions?currency=FOO
+Accept: application/vnd.onliner.v2+json
 ```
 ```
 HTTP/1.1 400 Bad Request
-
 {"errors": ["Unknown currency code FOO"]}
 ```
 
 ### Пример 3. Передан парамерт `currency` без значения
 ```
-GET /<version>/sections/2/positions?currency=
-Accept: application/vnd.onliner.<version>+json
+GET /sections/2/positions?currency=
+Accept: application/vnd.onliner.v2+json
 ```
 ```
 HTTP/1.1 400 Bad Request
-
 {"errors": ["'currency' can not be emty"]}
 ```
