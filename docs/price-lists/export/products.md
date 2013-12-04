@@ -2,7 +2,8 @@
 
 ## GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions
 
-Возвращает список позиций для указанного товара
+Возвращает список позиций для указанного товара. В версии `v1` цена позиции всегда возвращаются в `USD`,
+в версии `v2` есть возможность указать валюту. Если валюта не задана, цены возвращаются в валюте, указанной для позиции.
 
 - Ресурс **/sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions**
 - HTTP-метод **GET**
@@ -49,7 +50,7 @@ HTTP/1.1 400 Bad Request
     - `xml` - application/vnd.onliner.v2+xml
     - `csv` - application/vnd.onliner.v2+csv
 
-### Пример. Список позиций для товара в валюте, указанной для позиции
+### Пример. Список позиций для товара
 
 - Версия `v1`
 
