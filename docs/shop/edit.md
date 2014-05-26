@@ -45,7 +45,7 @@ Request Body:
 HTTP/1.1 200 OK
 ```
 
-### Пример ошибочного запроса
+### Примеры ошибочных запросов
 
 ```
 PUT /shop
@@ -70,6 +70,36 @@ HTTP/1.1 400 Bad Request
 {
     "errors": {
         "rates": ["Key 'EUR' is required and must not be empty"]
+    }
+}
+```
+
+--
+
+Request Body:
+```json
+{
+  "rates": {
+    "usd": 100000,
+    "eur": 200000
+  }
+}
+```
+
+### Ответ
+
+Обновляемые курсы валют не попадают в разрешенный диапазон.
+
+```
+HTTP/1.1 400 Bad Request
+```
+```json
+{
+    "errors": {
+        "rates": [
+          "'USD' field must be between 9 000 and 11 000",
+          "'EUR' field must be between 11 000 and 14 000"
+        ]
     }
 }
 ```
