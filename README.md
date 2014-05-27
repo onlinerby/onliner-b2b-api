@@ -1,11 +1,12 @@
 # Onliner B2B API
 
 Адрес API – https://b2bapi.onliner.by
-  
+
 Ресурс доступен только по протоколу HTTPS.
 
 - [Регистрация приложения](docs/application.md)
 - [Получение доступа к API](docs/oauth20.md)
+- [Работа с версиями API](docs/versioning.md)
 
 ## Магазин
 
@@ -25,7 +26,7 @@
 - [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products](docs/catalog/products.md)
     - Возвращает список товаров указанного производителя
 - [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions](docs/price-lists/positions.md)
-    - Возвращает список позиций указанного товара    
+    - Возвращает список позиций указанного товара
 
 ## Подключение и отключение разделов каталога
 - [POST /sections/{id}](docs/shop/section/add.md)
@@ -49,7 +50,7 @@
     - Возвращает статус обработки прайс-листа
 - [GET /pricelists/{pricelistId}/report](docs/price-lists/import/report.md)
     - Возвращает список ошибок, возникших во время импорта
-    
+
 ### Удаление позиции товара
 
 [Общая информация по удалению позиций из прайс листов](docs/price-lists/delete/info.md)
@@ -60,7 +61,7 @@
     - Удаляет конкретную позицию товара
 - [DELETE /priceists](docs/price-lists/delete/list.md)
     - При наличии списка удаляет позиции товаров, ID которых перечисланы в списке
-    
+
 ### Обновление актуальности
 
 - [PUT /pricelist/{id}/renew](docs/price-lists/renew.md)
