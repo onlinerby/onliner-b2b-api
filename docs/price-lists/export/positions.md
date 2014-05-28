@@ -6,11 +6,17 @@
 
 - Ресурс **/positions**
 - HTTP-метод **GET**
-- Формат ответа **CSV|JSON|XML**
+- Формат ответа **csv | json | xml**
 
 ### Параметры
 
-*нет параметров*
+- **currency** [optional] Валюта, в которой нужно вернуть цены
+    - **BYR**
+    - **USD**
+    - **EUR**
+
+Если параметр не передан, то цены позиций будут возвращены в той валюте, которая указана в списке позиций.
+Если передана неправильная валюта, то будет возвращена ошибка.
 
 ### Запрос нужного формата данных
 
@@ -23,7 +29,7 @@
 - XML
     - Accept: application/xml
 
-### Пример. Список позиций магазина
+### Пример 1. Список позиций магазина
 
 ```
 GET /positions
@@ -52,7 +58,7 @@ Accept: application/json
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
         "price":250,
-        "currency":"USD",
+        "currency":"EUR",
         "status":"спец",
         "comment":"Test2",
         "warranty":"12",
@@ -65,8 +71,8 @@ Accept: application/json
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
-        "price":300,
-        "currency":"USD",
+        "price":300000,
+        "currency":"BYR",
         "status":"нет",
         "comment":"Test3",
         "warranty":"12",
@@ -75,4 +81,30 @@ Accept: application/json
         "isCredit":"нет"
     }
 ]
+```
+
+### Пример 2. Передана неправильная валюта для экспорта
+```
+GET /positions?currency=blah
+Accept: application/json
+```
+```
+HTTP/1.1 400 Bad Request
+
+{
+    "errors": {"Unknown currency code blah"}
+}
+```
+
+### Пример 3. Параметр валюты задан, но его значение отсутствует
+```
+GET /positions?currency=
+Accept: application/json
+```
+```
+HTTP/1.1 400 Bad Request
+
+{
+    "errors": {"Field 'currency' cannot be empty"}
+}
 ```

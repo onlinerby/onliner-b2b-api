@@ -6,7 +6,7 @@
 
 - Ресурс **/sections/{sectionId}/positions**
 - HTTP-метод **GET**
-- Формат ответа **CSV|JSON|XML**
+- Формат ответа **csv | json | xml**
 
 ### Параметры
 
@@ -23,7 +23,7 @@
 - XML
     - Accept: application/xml
 
-### Пример. Список позиций для указанного раздела
+### Пример 1. Список позиций для указанного раздела
 
 ```
 GET /sections/2/positions
@@ -75,4 +75,30 @@ Accept: application/json
         "isCredit":"нет"
     }
 ]
+```
+
+### Пример 2. Передана неправильная валюта для экспорта
+```
+GET /sections/2/positions?currency=blah
+Accept: application/json
+```
+```
+HTTP/1.1 400 Bad Request
+
+{
+    "errors": {"Unknown currency code blah"}
+}
+```
+
+### Пример 3. Параметр валюты задан, но его значение отсутствует
+```
+GET /sections/2/positions?currency=
+Accept: application/json
+```
+```
+HTTP/1.1 400 Bad Request
+
+{
+    "errors": {"Field 'currency' cannot be empty"}
+}
 ```
