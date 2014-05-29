@@ -6,11 +6,19 @@
 
 - Ресурс **/sections/{sectionId}/manufacturers/{manufacturerId}/positions**
 - HTTP-метод **GET**
-- Формат ответа **CSV|JSON|XML**
+- Формат ответа **csv | json | xml**
 
 ### Параметры
 
-*нет параметров*
+- **currency** [optional] Валюта, в которой нужно вернуть цены
+    - **BYR**
+    - **USD**
+    - **EUR**
+    - **original**
+
+Если параметр не передан, то цены позиций будут возвращены в долларах США.
+В случае, если параметр равен 'original', то цены будут возвращены в той валюте, которая указана в списке позиций.
+Если передана неправильная валюта, то будет возвращена ошибка.
 
 ### Запрос нужного формата данных
 
@@ -23,7 +31,7 @@
 - XML
     - Accept: application/xml
 
-### Пример. Список позиций для указанного производителя
+### Пример 1. Список позиций для указанного производителя
 
 ```
 GET /sections/2/manufacturers/851/positions
@@ -75,4 +83,31 @@ Accept: application/json
         "isCredit":"нет"
     }
 ]
+```
+
+
+### Пример 2. Передана неправильная валюта для экспорта
+```
+GET /sections/2/manufacturers/851/positions?currency=blah
+Accept: application/json
+```
+```
+HTTP/1.1 400 Bad Request
+
+{
+    "errors": {"Unknown currency code blah"}
+}
+```
+
+### Пример 3. Параметр валюты задан, но его значение отсутствует
+```
+GET /sections/2/manufacturers/851/positions?currency=
+Accept: application/json
+```
+```
+HTTP/1.1 400 Bad Request
+
+{
+    "errors": {"Field 'currency' cannot be empty"}
+}
 ```
