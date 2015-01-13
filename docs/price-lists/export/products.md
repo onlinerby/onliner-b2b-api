@@ -35,7 +35,6 @@ Accept: application/json
         "model":"iPod nano 16Gb (7th generation)",
         "price":200,
         "currency":"BYR",
-        "status":"спец",
         "comment":"Test1",
         "warranty":"12",
         "delivery":"на следующий день",
