@@ -38,7 +38,10 @@ Accept: application/json
         "status":"спец",
         "comment":"Test1",
         "warranty":"12",
-        "delivery":"на следующий день",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
         "isCashless":"нет",
         "isCredit":"нет"
     }

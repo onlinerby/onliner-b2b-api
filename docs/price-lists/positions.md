@@ -29,7 +29,10 @@ GET /sections/2/manufacturers/1/products/1/positions
     "status":"нет",
     "comment":"Test",
     "warranty":"12",
-    "delivery":"бесплатная",
+    "delivery_town_time":1,
+    "delivery_town_price":1,
+    "delivery_country_time":1,
+    "delivery_country_price":1,
     "isCashless":"да",
     "isCredit":"да"
 }

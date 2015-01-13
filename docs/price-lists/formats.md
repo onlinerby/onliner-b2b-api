@@ -3,7 +3,7 @@
 ## JSON
 
 ```json
-[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]
+[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"isCashless":"Да","isCredit":"Нет"}]
 ```
 
 ## XML
@@ -24,7 +24,10 @@
             <status>Склад</status>
             <comment>Ваш комментарий</comment>
             <warranty>12</warranty>
-            <delivery>На сегодня</delivery>
+            <delivery_town_time>1</delivery_town_time>
+            <delivery_town_price>1</delivery_town_price>
+            <delivery_country_time>1</delivery_country_time>
+            <delivery_country_price>1</delivery_country_price>
             <isCashless>Да</isCashless>
             <isCredit>Нет</isCredit>
         </item>
@@ -43,5 +46,4 @@
 ```
 status - нет, склад, заказ, спец, предзаказ (только для игр)
 currency - USD, EUR, BYR
-delivery - бесплатная, на сегодня, на следующий день, нет, платная
 ```
