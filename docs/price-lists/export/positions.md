@@ -37,7 +37,10 @@ Accept: application/json
         "currency":"BYR",
         "comment":"Test1",
         "warranty":"12",
-        "delivery":"на следующий день",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
         "isCashless":"нет",
         "isCredit":"нет"
     },
@@ -50,7 +53,10 @@ Accept: application/json
         "currency":"BYR",
         "comment":"Test2",
         "warranty":"12",
-        "delivery":"нет",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
         "isCashless":"нет",
         "isCredit":"нет"
     },
@@ -63,7 +69,10 @@ Accept: application/json
         "currency":"BYR",
         "comment":"Test3",
         "warranty":"12",
-        "delivery":"платная",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
         "isCashless":"нет",
         "isCredit":"нет"
     }
