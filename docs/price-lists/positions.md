@@ -25,7 +25,7 @@ GET /sections/2/manufacturers/1/products/1/positions
     "vendor":"Apple",
     "model":"iPod classic 160Gb",
     "price":50,
-    "currency":"USD",
+    "currency":"BYR",
     "status":"нет",
     "comment":"Test",
     "warranty":"12",
