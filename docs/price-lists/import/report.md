@@ -25,7 +25,7 @@
 - currency Валюта
     - ERROR_INVALID_CURRENCY "недопустимое значение"
     - NOT_IN_ARRAY "Неверное значение поля"
-- isCashless, isCredit Безнал, Кредит
+- isCashless, isCredit Только для юр. лиц, Кредит
     - ERROR_INVALID_FLAG "недопустимое значение поля"
 - status Статус товара (нет в наличии, на складе, ...)
     - ERROR_INVALID_STATUS "недопустимое значение поля"
@@ -63,8 +63,10 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "vendor": "Jagga",
             "model": "X4",
             "price": "8120",
-            "status": "Нет",
             "comment": "фывфы",
+            "producer":"Apple",
+            "importer":"Рога и Копыта",
+            "service_centers":"ул. П. Бровки 5, ООО Сервис",
             "warranty": "250",
             "delivery_town_time": -1,
             "isCashless": "",
@@ -98,8 +100,10 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "vendor": "Jagga",
             "model": "X4",
             "price": "8120",
-            "status": "Нет",
             "comment": "фывфы",
+            "producer":"Apple",
+            "importer":"Рога и Копыта",
+            "service_centers":"ул. П. Бровки 5, ООО Сервис",
             "warranty": "250",
             "delivery_town_price": -1,
             "isCashless": null,

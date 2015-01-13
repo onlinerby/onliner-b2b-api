@@ -3,7 +3,7 @@
 ## JSON
 
 ```json
-[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","status":"Склад","comment":"Ваш комментарий","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"isCashless":"Да","isCredit":"Нет"}]
+[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","importer":"Рога и Копыта","service_centers":"ул. П. Бровки 5, ООО Сервис","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"isCashless":"Да","isCredit":"Нет"}]
 ```
 
 ## XML
@@ -21,8 +21,10 @@
             <model>AS 6005 BTHD</model>
             <price>1000000</price>
             <currency>BYR</currency>
-            <status>Склад</status>
             <comment>Ваш комментарий</comment>
+            <producer>Изготовитель</producer>
+            <importer>Импортер</importer>
+            <service_centers>Сервисные центры</service_centers>
             <warranty>12</warranty>
             <delivery_town_time>1</delivery_town_time>
             <delivery_town_price>1</delivery_town_price>
