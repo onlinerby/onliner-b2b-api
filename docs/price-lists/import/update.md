@@ -26,7 +26,7 @@
 PATCH /pricelists
 Accept: application/json
 Content-Type: application/json
-Data: [{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]
+Data: [{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","producer":"Apple","importer":"Рога и Копыта","service_centers":"ул. П. Бровки 5, ООО Сервис","warranty":"12","delivery":"На сегодня","isCashless":"Да","isCredit":"Нет"}]
 ```
 ### Пример запроса с использованием библиотеки curl
 ```
