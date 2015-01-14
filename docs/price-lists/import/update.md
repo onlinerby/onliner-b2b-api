@@ -26,17 +26,17 @@
 PATCH /pricelists
 Accept: application/json
 Content-Type: application/json
-Data: [{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","importer":"Рога и Копыта","service_centers":"ул. П. Бровки 5, ООО Сервис","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"product_life_time":1,"isCashless":"Да","isCredit":"Нет"}]
+Data: [{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","importer":"Рога и Копыта","serviceCenters":"ул. П. Бровки 5, ООО Сервис","warranty":"12","deliveryTownTime":1,"deliveryTownPrice":1,"deliveryCountryTime":1,"deliveryCountryPrice":1,"productLifeTime":1,"isCashless":"Да","isCredit":"Нет"}]
 ```
 ### Пример запроса с использованием библиотеки curl
 ```
 curl https://b2bapi.onliner.by/pricelists \
--d '[{"category":"AV-ресиверы и усилители","vendor":"Anthem","model":"A2","price":"10000","currency":"BYR","comment":"Ваш комментарий","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"product_life_time":1,"isCashless":"Да","isCredit":"Нет"}]' \
+-d '[{"category":"AV-ресиверы и усилители","vendor":"Anthem","model":"A2","price":"10000","currency":"BYR","comment":"Ваш комментарий","warranty":"12","deliveryTownTime":1,"deliveryTownPrice":1,"deliveryCountryTime":1,"deliveryCountryPrice":1,"productLifeTime":1,"isCashless":"Да","isCredit":"Нет"}]' \
 -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: Bearer RECIVED_TOKEN_STRING' -X PATCH
 ```
 ### Пример запроса на языке php
 ```php
-$data = '[{"category":"AV-ресиверы и усилители","vendor":"Anthem","model":"A2","price":"10000","currency":"BYR","comment":"Ваш комментарий","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"product_life_time":1,"isCashless":"Да","isCredit":"Нет"}]';
+$data = '[{"category":"AV-ресиверы и усилители","vendor":"Anthem","model":"A2","price":"10000","currency":"BYR","comment":"Ваш комментарий","warranty":"12","deliveryTownTime":1,"deliveryTownPrice":1,"deliveryCountryTime":1,"deliveryCountryPrice":1,"productLifeTime":1,"isCashless":"Да","isCredit":"Нет"}]';
 $process = curl_init("https://b2bapi.onliner.by/pricelists");
 curl_setopt(
 	$process, 

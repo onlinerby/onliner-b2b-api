@@ -30,10 +30,10 @@
 - status Статус товара (нет в наличии, на складе, ...)
     - ERROR_INVALID_STATUS "недопустимое значение поля"
     - NOT_IN_ARRAY "неверное значение поля"
-- delivery_town_time, delivery_town_price, delivery_country_time, delivery_country_price
+- deliveryTownTime, deliveryTownPrice, deliveryCountryTime, deliveryCountryPrice
     - NOT_GREATER_THAN "недопустимое значение поля"
     - MUST_NOT_BE_BLANK "поле является обязательным"
-- product_life_time
+- productLifeTime
     - NOT_GREATER_THAN "недопустимое значение поля"
 - warranty Гарантия
     - NOT_LESS_EQUAL_TO "превышает допустимое значение"
@@ -68,9 +68,9 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "comment": "фывфы",
             "producer":"Apple",
             "importer":"Рога и Копыта",
-            "service_centers":"ул. П. Бровки 5, ООО Сервис",
+            "serviceCenters":"ул. П. Бровки 5, ООО Сервис",
             "warranty": "250",
-            "delivery_town_time": -1,
+            "deliveryTownTime": -1,
             "isCashless": "",
             "isCredit": ""
         },
@@ -87,7 +87,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                     "message": "недопустимое значение поля"
                 }
             ],
-            "delivery_town_time": [
+            "deliveryTownTime": [
                 {
                     "code": "NOT_GREATER_THAN",
                     "message": "недопустимое значение поля"
@@ -105,9 +105,9 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "comment": "фывфы",
             "producer":"Apple",
             "importer":"Рога и Копыта",
-            "service_centers":"ул. П. Бровки 5, ООО Сервис",
+            "serviceCenters":"ул. П. Бровки 5, ООО Сервис",
             "warranty": "250",
-            "delivery_town_price": -1,
+            "deliveryTownPrice": -1,
             "isCashless": null,
             "isCredit": null
         },
@@ -124,7 +124,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                     "message": "недопустимое значение поля"
                 }
             ],
-            "delivery_town_price": [
+            "deliveryTownPrice": [
                 {
                     "code": "NOT_GREATER_THAN",
                     "message": "недопустимое значение поля"
