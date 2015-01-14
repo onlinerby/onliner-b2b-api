@@ -37,3 +37,9 @@
   * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
   * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
   * [docs/price-lists/positions.md](docs/price-lists/positions.md)
+
+* Удален метод обновления курсов валют магазина
+
+* Удалено поле currencyRates из свойств магазина
+ * Изменения затрагивают следующие методы:
+  * [docs/shop/info.md](docs/shop/info.md)

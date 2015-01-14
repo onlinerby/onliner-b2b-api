@@ -92,10 +92,6 @@ Accept: application/json
   "dailySectionsCost": 5.78,
   "daysOfWork": 274,
   "sectionsCostWithDiscount": 120.6,
-  "dailySectionsCostWithDiscount": 4.02,
-  "currencyRates": {
-    "USD": 8700,
-    "EUR": 11500
-  }
+  "dailySectionsCostWithDiscount": 4.02
 }
 ```
