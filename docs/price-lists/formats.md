@@ -3,7 +3,28 @@
 ## JSON
 
 ```json
-[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","importer":"Рога и Копыта","serviceCenters":"ул. П. Бровки 5, ООО Сервис","warranty":"12","deliveryTownTime":1,"deliveryTownPrice":1,"deliveryCountryTime":1,"deliveryCountryPrice":1,"productLifeTime":1,"isCashless":"Да","isCredit":"Нет"}]
+[
+    {
+        "category":"MP3-плееры",
+        "vendor":"Apple",
+        "model":"iPod nano 16Gb (7th generation)",
+        "price":200000,
+        "currency":"BYR",
+        "comment":"Ваш комментарий",
+        "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
+        "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12",
+        "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5
+            ООО Плеерсервис, г.Гомель, ул. Платонова, 16",
+        "warranty":"12",
+        "deliveryTownTime":1,
+        "deliveryTownPrice":10000,
+        "deliveryCountryTime":5,
+        "deliveryCountryPrice":20000,
+        "productLifeTime":36,
+        "isCashless":"нет",
+        "isCredit":"нет"
+    }
+]
 ```
 
 ## XML
@@ -16,23 +37,24 @@
     </settings>
     <items-list>
         <item>
-            <category>GPS-навигаторы</category>
-            <vendor>ALGA</vendor>
-            <model>AS 6005 BTHD</model>
-            <price>1000000</price>
+            <category>MP3-плееры</category>
+            <vendor>Apple</vendor>
+            <model>iPod nano 16Gb (7th generation)</model>
+            <price>200000</price>
             <currency>BYR</currency>
             <comment>Ваш комментарий</comment>
-            <producer>Изготовитель</producer>
-            <importer>Импортер</importer>
-            <serviceCenters>Сервисные центры</serviceCenters>
+            <producer>Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China</producer>
+            <importer>ООО Музтрейд, г.Минск, ул. Кропоткина, 12</importer>
+            <serviceCenters>ООО Музсервис, г.Минск, ул. П. Бровки, 5
+                ООО Плеерсервис, г.Гомель, ул. Платонова, 16</serviceCenters>
             <warranty>12</warranty>
             <deliveryTownTime>1</deliveryTownTime>
-            <deliveryTownPrice>1</deliveryTownPrice>
-            <deliveryCountryTime>1</deliveryCountryTime>
-            <deliveryCountryPrice>1</deliveryCountryPrice>
-            <productLifeTime>1</productLifeTime>
-            <isCashless>Да</isCashless>
-            <isCredit>Нет</isCredit>
+            <deliveryTownPrice>10000</deliveryTownPrice>
+            <deliveryCountryTime>5</deliveryCountryTime>
+            <deliveryCountryPrice>20000</deliveryCountryPrice>
+            <productLifeTime>36</productLifeTime>
+            <isCashless>нет</isCashless>
+            <isCredit>нет</isCredit>
         </item>
     </items-list>
 </price-list>
@@ -41,12 +63,5 @@
 ## CSV
 
 ```
-Мобильные телефоны;Apple;iPhone 4S (16Gb);2450000;BYR;Склад;Цена действительна при безналичном расчете. Стоимость товара указана с НДС. Быстро выставляем счет. Быстрая отгрузка товара. Полный пакет документов. Дополнительные скидки для постоянных партнеров.Накопительная дисконтная карта RedCard. Оперативная доставка по всей Беларуси, по Минску - в течение 1-2 часов. Квалифицированная консультация. Установка программ и техническая поддержка в течение всего ;0;;Бесплатная;Да;Нет
-...
-```
-
-### Допустимые значения полей
-```
-status - нет, склад, заказ, спец, предзаказ (только для игр)
-currency - USD, EUR, BYR
+MP3-плееры;Apple;iPod nano 16Gb (7th generation);200000;BYR;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10000;5;20000;36;нет;нет
 ```

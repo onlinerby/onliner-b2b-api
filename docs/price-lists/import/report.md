@@ -27,9 +27,6 @@
     - NOT_IN_ARRAY "Неверное значение поля"
 - isCashless, isCredit Только для юр. лиц, Кредит
     - ERROR_INVALID_FLAG "недопустимое значение поля"
-- status Статус товара (нет в наличии, на складе, ...)
-    - ERROR_INVALID_STATUS "недопустимое значение поля"
-    - NOT_IN_ARRAY "неверное значение поля"
 - deliveryTownTime, deliveryTownPrice, deliveryCountryTime, deliveryCountryPrice
     - NOT_GREATER_THAN "недопустимое значение поля"
     - MUST_NOT_BE_BLANK "поле является обязательным"
@@ -60,19 +57,24 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
 [
     {
         "values": {
-            "currency": "BYR",
-            "category": "GPS-навигаторы",
-            "vendor": "Jagga",
-            "model": "X4",
-            "price": "8120",
-            "comment": "фывфы",
-            "producer":"Apple",
-            "importer":"Рога и Копыта",
-            "serviceCenters":"ул. П. Бровки 5, ООО Сервис",
-            "warranty": "250",
-            "deliveryTownTime": -1,
-            "isCashless": "",
-            "isCredit": ""
+            "category":"MP3-плееры",
+            "vendor":"Apple",
+            "model":"iPod nano 16Gb (7th generation)",
+            "price":200000,
+            "currency":"BYR",
+            "comment":"Ваш комментарий",
+            "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
+            "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12",
+            "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5
+                ООО Плеерсервис, г.Гомель, ул. Платонова, 16",
+            "warranty":"12",
+            "deliveryTownTime":-5,
+            "deliveryTownPrice":10000,
+            "deliveryCountryTime":5,
+            "deliveryCountryPrice":20000,
+            "productLifeTime":36,
+            "isCashless":"xxx",
+            "isCredit":"xxx"
         },
         "errors": {
             "isCredit": [
@@ -88,43 +90,6 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                 }
             ],
             "deliveryTownTime": [
-                {
-                    "code": "NOT_GREATER_THAN",
-                    "message": "недопустимое значение поля"
-                }
-            ]
-        }
-    },
-    {
-        "values": {
-            "currency": "BYR",
-            "category": "GPS-навигаторы",
-            "vendor": "Jagga",
-            "model": "X4",
-            "price": "8120",
-            "comment": "фывфы",
-            "producer":"Apple",
-            "importer":"Рога и Копыта",
-            "serviceCenters":"ул. П. Бровки 5, ООО Сервис",
-            "warranty": "250",
-            "deliveryTownPrice": -1,
-            "isCashless": null,
-            "isCredit": null
-        },
-        "errors": {
-            "isCredit": [
-                {
-                    "code": "ERROR_INVALID_FLAG",
-                    "message": "недопустимое значение поля"
-                }
-            ],
-            "isCashless": [
-                {
-                    "code": "ERROR_INVALID_FLAG",
-                    "message": "недопустимое значение поля"
-                }
-            ],
-            "deliveryTownPrice": [
                 {
                     "code": "NOT_GREATER_THAN",
                     "message": "недопустимое значение поля"

@@ -34,7 +34,7 @@
  * Изменения затрагивают следующие методы:
   * [docs/price-lists/formats.md](docs/price-lists/formats.md)
   * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
-  * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
+  * [docs/price-lists/import/report.mФВВd](docs/price-lists/import/report.md)
   * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
   * [docs/price-lists/positions.md](docs/price-lists/positions.md)
 
@@ -53,4 +53,3 @@
 * Удалено поле currencyRates из свойств магазина
  * Изменения затрагивают следующие методы:
   * [docs/shop/info.md](docs/shop/info.md)
-  

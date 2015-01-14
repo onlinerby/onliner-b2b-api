@@ -36,10 +36,10 @@ Accept: application/json
         "price":200000,
         "currency":"BYR",
         "comment":"Ваш комментарий",
-        "producer":"Apple Inc. 1 Infinite Loop Cupertino, CA 95014",
+        "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
         "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12",
-        "serviceCenters":"ООО Музсервис, ул. П. Бровки, 5
-            ООО Плеерсервис, ул. Платонова, 16",
+        "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5
+            ООО Плеерсервис, г.Гомель, ул. Платонова, 16",
         "warranty":"12",
         "deliveryTownTime":1,
         "deliveryTownPrice":10000,

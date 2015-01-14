@@ -26,13 +26,13 @@ curl_close($process);
 - аргумент запроса (пример с использованием библиотеки curl)
 ```
 curl -H 'Accept: application/json' \
-  https://b2bapi.onliner.by/shop?access_token=RECIVED_TOKEN_STRING
+  https://b2bapi.onliner.by/shop?access_token=RECEIVED_TOKEN_STRING
 ```
 
 - в заголовке HTTPS-запроса (пример с использованием библиотеки curl)
 ```
 curl -H 'Accept: application/json' \
-  -H 'Authorization: Bearer RECIVED_TOKEN_STRING' \
+  -H 'Authorization: Bearer RECEIVED_TOKEN_STRING' \
   https://b2bapi.onliner.by/shop
 ```
 
