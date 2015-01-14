@@ -25,7 +25,7 @@
 * Появились новые поля для позиции товара
  * producer - изготовитель товара, обязательное поле, строка до 500 символов
  * importer - импортер товара, обязательное поле, если импортера нет - указывается то же, что и в поле изготовитель, строка до 500 символов
- * serviceCenters - сервисные центры, обязательное поле, строка до 1500 символов
+ * serviceCenters - сервисные центры, обязательное поле, если несколько - через симвло перевода строки, строка до 1500 символов
  * deliveryTownTime - срок доставки по городу в днях, обязательное, если указана стоимость доставки по городу
  * deliveryTownPrice - стоимость доставки по городу в белорусских рублях, 0 - бесплатная доставка
  * deliveryCountryTime - срок доставки по стране в днях, обязательное, если указана стоимость доставки по стране
@@ -38,8 +38,19 @@
   * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
   * [docs/price-lists/positions.md](docs/price-lists/positions.md)
 
+* Удалены следующие поля для позиции товара
+ * status
+ * delivery
+ * Изменения затрагивают следующие методы:
+   * [docs/price-lists/formats.md](docs/price-lists/formats.md)
+   * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+   * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
+   * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+   * [docs/price-lists/positions.md](docs/price-lists/positions.md)
+
 * Удален метод обновления курсов валют магазина
 
 * Удалено поле currencyRates из свойств магазина
  * Изменения затрагивают следующие методы:
   * [docs/shop/info.md](docs/shop/info.md)
+  
