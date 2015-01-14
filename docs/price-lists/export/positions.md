@@ -8,18 +8,6 @@
 - HTTP-метод **GET**
 - Формат ответа **csv | json | xml**
 
-### Параметры
-
-- **currency** [optional] Валюта, в которой нужно вернуть цены
-    - **BYR**
-    - **USD**
-    - **EUR**
-    - **original**
-
-Если параметр не передан, то цены позиций будут возвращены в долларах США.
-В случае, если параметр равен 'original', то цены будут возвращены в той валюте, которая указана в списке позиций.
-Если передана неправильная валюта, то будет возвращена ошибка.
-
 ### Запрос нужного формата данных
 
 Чтобы получить нужный вам формат данных, добавьте в запрос заголовок Accept:
@@ -46,11 +34,14 @@ Accept: application/json
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
         "price":200,
-        "currency":"USD",
-        "status":"спец",
+        "currency":"BYR",
         "comment":"Test1",
         "warranty":"12",
-        "delivery":"на следующий день",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
+        "product_life_time":1,
         "isCashless":"нет",
         "isCredit":"нет"
     },
@@ -60,11 +51,14 @@ Accept: application/json
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
         "price":250,
-        "currency":"EUR",
-        "status":"спец",
+        "currency":"BYR",
         "comment":"Test2",
         "warranty":"12",
-        "delivery":"нет",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
+        "product_life_time":1,
         "isCashless":"нет",
         "isCredit":"нет"
     },
@@ -75,38 +69,15 @@ Accept: application/json
         "model":"iPod nano 16Gb (7th generation)",
         "price":300000,
         "currency":"BYR",
-        "status":"нет",
         "comment":"Test3",
         "warranty":"12",
-        "delivery":"платная",
+        "delivery_town_time":1,
+        "delivery_town_price":1,
+        "delivery_country_time":1,
+        "delivery_country_price":1,
+        "product_life_time":1,
         "isCashless":"нет",
         "isCredit":"нет"
     }
 ]
-```
-
-### Пример 2. Передана неправильная валюта для экспорта
-```
-GET /positions?currency=blah
-Accept: application/json
-```
-```
-HTTP/1.1 400 Bad Request
-
-{
-    "errors": {"Unknown currency code blah"}
-}
-```
-
-### Пример 3. Параметр валюты задан, но его значение отсутствует
-```
-GET /positions?currency=
-Accept: application/json
-```
-```
-HTTP/1.1 400 Bad Request
-
-{
-    "errors": {"Field 'currency' cannot be empty"}
-}
 ```
