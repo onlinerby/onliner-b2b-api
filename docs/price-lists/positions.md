@@ -35,6 +35,7 @@ GET /sections/2/manufacturers/1/products/1/positions
     "delivery_town_price":1,
     "delivery_country_time":1,
     "delivery_country_price":1,
+    "product_life_time":1,
     "isCashless":"да",
     "isCredit":"да"
 }

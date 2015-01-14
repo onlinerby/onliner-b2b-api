@@ -3,7 +3,7 @@
 ## JSON
 
 ```json
-[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","importer":"Рога и Копыта","service_centers":"ул. П. Бровки 5, ООО Сервис","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"isCashless":"Да","isCredit":"Нет"}]
+[{"category":"GPS-навигаторы","vendor":"ALGA","model":"AS 6005 BTHD","price":"1000000","currency":"BYR","comment":"Ваш комментарий","importer":"Рога и Копыта","service_centers":"ул. П. Бровки 5, ООО Сервис","warranty":"12","delivery_town_time":1,"delivery_town_price":1,"delivery_country_time":1,"delivery_country_price":1,"product_life_time":1,"isCashless":"Да","isCredit":"Нет"}]
 ```
 
 ## XML
@@ -30,6 +30,7 @@
             <delivery_town_price>1</delivery_town_price>
             <delivery_country_time>1</delivery_country_time>
             <delivery_country_price>1</delivery_country_price>
+            <product_life_time>1</product_life_time>
             <isCashless>Да</isCashless>
             <isCredit>Нет</isCredit>
         </item>

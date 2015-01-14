@@ -33,6 +33,8 @@
 - delivery_town_time, delivery_town_price, delivery_country_time, delivery_country_price
     - NOT_GREATER_THAN "недопустимое значение поля"
     - MUST_NOT_BE_BLANK "поле является обязательным"
+- product_life_time
+    - NOT_GREATER_THAN "недопустимое значение поля"
 - warranty Гарантия
     - NOT_LESS_EQUAL_TO "превышает допустимое значение"
 - общие ошибки

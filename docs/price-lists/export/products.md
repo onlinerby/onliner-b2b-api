@@ -44,6 +44,7 @@ Accept: application/json
         "delivery_town_price":1,
         "delivery_country_time":1,
         "delivery_country_price":1,
+        "product_life_time":1,
         "isCashless":"нет",
         "isCredit":"нет"
     }
