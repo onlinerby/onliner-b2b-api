@@ -43,9 +43,8 @@
             <currency>BYR</currency>
             <comment>Ваш комментарий</comment>
             <producer>Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China</producer>
-            <importer>ООО Музтрейд, г.Минск, ул. Кропоткина, 12</importer>
-            <serviceCenters>ООО Музсервис, г.Минск, ул. П. Бровки, 5
-                ООО Плеерсервис, г.Гомель, ул. Платонова, 16</serviceCenters>
+            <importer>ООО Музтрейд, г.Минск, ул. Кропоткина, 12&#13;ООО Плеерсервис, г.Гомель, ул. Платонова, 16</importer>
+            <serviceCenters>ООО Музсервис, г.Минск, ул. П. Бровки, 5&#13;ООО Плеерсервис, г.Гомель, ул. Платонова, 16</serviceCenters>
             <warranty>12</warranty>
             <deliveryTownTime>1</deliveryTownTime>
             <deliveryTownPrice>10000</deliveryTownPrice>
