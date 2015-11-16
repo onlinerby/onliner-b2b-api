@@ -1,6 +1,16 @@
 
 # CHANGELOG
 
+## 16.11.2015
+
+* Добавлен ID позиции во все методы, возвращающие информацию о позициях товаров
+ * Изменения затрагивают следующие методы:
+ * [docs/price-lists/positions.md](docs/price-lists/positions.md)
+ * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+ * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
+ * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+ * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+
 ## 14.01.2015
 
 * Удален параметр currency для экспорта позиций товара
@@ -34,7 +44,7 @@
  * Изменения затрагивают следующие методы:
  * [docs/price-lists/formats.md](docs/price-lists/formats.md)
  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
- * [docs/price-lists/import/report.mФВВd](docs/price-lists/import/report.md)
+ * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
  * [docs/price-lists/positions.md](docs/price-lists/positions.md)
 

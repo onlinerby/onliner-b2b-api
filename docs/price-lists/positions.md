@@ -21,6 +21,7 @@ GET /sections/2/manufacturers/1/products/1/positions
 ```json
 [
     {
+        "id": 1,
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
