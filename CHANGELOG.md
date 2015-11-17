@@ -10,6 +10,10 @@
  * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
  * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
  * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+* При импорте прайс-листа можно (опционально) указывать id предложения
+ * Изменения затрагивают следующие методы:
+ * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+ * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
 
 ## 14.01.2015
 
