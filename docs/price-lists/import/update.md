@@ -21,6 +21,8 @@
 |Параметр|Тип|Описание|
 |---|---|---|
 |id|integer|Опциональный параметр, который определяет id предложения|
+|price|float|Цена предложения|
+|currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть BYR или BYN|
 
 ### Пример запроса
 
@@ -35,17 +37,17 @@ Content-Type: application/json
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
-        "price":200000,
-        "currency":"BYR",
+        "price":20.16,
+        "currency":"BYN",
         "comment":"Ваш комментарий",
         "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
         "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
         "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
         "warranty":"12",
         "deliveryTownTime":1,
-        "deliveryTownPrice":10000,
+        "deliveryTownPrice":1,
         "deliveryCountryTime":5,
-        "deliveryCountryPrice":20000,
+        "deliveryCountryPrice":2,
         "productLifeTime":36,
         "isCashless":"нет",
         "isCredit":"нет"
@@ -60,17 +62,17 @@ curl https://b2bapi.onliner.by/pricelists \
             "category":"MP3-плееры",
             "vendor":"Apple",
             "model":"iPod nano 16Gb (7th generation)",
-            "price":200000,
-            "currency":"BYR",
+            "price":20.16,
+            "currency":"BYN",
             "comment":"Ваш комментарий",
             "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
             "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
             "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
             "warranty":"12",
             "deliveryTownTime":1,
-            "deliveryTownPrice":10000,
+            "deliveryTownPrice":1,
             "deliveryCountryTime":5,
-            "deliveryCountryPrice":20000,
+            "deliveryCountryPrice":2,
             "productLifeTime":36,
             "isCashless":"нет",
             "isCredit":"нет"
@@ -85,17 +87,17 @@ $data = '[
                  "category":"MP3-плееры",
                  "vendor":"Apple",
                  "model":"iPod nano 16Gb (7th generation)",
-                 "price":200000,
-                 "currency":"BYR",
+                 "price":20.16,
+                 "currency":"BYN",
                  "comment":"Ваш комментарий",
                  "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
                  "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
                  "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
                  "warranty":"12",
                  "deliveryTownTime":1,
-                 "deliveryTownPrice":10000,
+                 "deliveryTownPrice":1,
                  "deliveryCountryTime":5,
-                 "deliveryCountryPrice":20000,
+                 "deliveryCountryPrice":2,
                  "productLifeTime":36,
                  "isCashless":"нет",
                  "isCredit":"нет"
@@ -122,4 +124,3 @@ curl_close($process);
 HTTP/1.1 202 Accepted
 {"id":"51b84cd3ddecce0804000001","shopId":1,"fileName":"price-list2013-06-12.json","size":1036,"date":"2013-06-12 13:26:27","status":"STATUS_WAITING","contentType":"json","statusMessage":null}
 ```
-

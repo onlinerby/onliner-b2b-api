@@ -8,8 +8,8 @@
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
-        "price":200000,
-        "currency":"BYR",
+        "price":20.16,
+        "currency":"BYN",
         "comment":"Ваш комментарий",
         "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
         "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
@@ -39,8 +39,8 @@
             <category>MP3-плееры</category>
             <vendor>Apple</vendor>
             <model>iPod nano 16Gb (7th generation)</model>
-            <price>200000</price>
-            <currency>BYR</currency>
+            <price>20.16</price>
+            <currency>BYN</currency>
             <comment>Ваш комментарий</comment>
             <producer>Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China</producer>
             <importer>ООО Музтрейд, г.Минск, ул. Кропоткина, 12&#13;ООО Плеерсервис, г.Гомель, ул. Платонова, 16</importer>
@@ -61,5 +61,5 @@
 ## CSV
 
 ```
-MP3-плееры;Apple;iPod nano 16Gb (7th generation);200000;BYR;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10000;5;20000;36;нет;нет
+MP3-плееры;Apple;iPod nano 16Gb (7th generation);20.16;BYN;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10000;5;20000;36;нет;нет
 ```
