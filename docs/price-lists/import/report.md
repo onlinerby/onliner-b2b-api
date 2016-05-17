@@ -22,6 +22,7 @@
     - ERROR_MODEL_NOT_FOUND "Неверно указана или не указана модель товара"
 - price Цена
     - NOT_LESS_EQUAL_TO "превышает допустимое значение"
+    - ERROR_INVALID_MONEY_FORMAT "Недопустимый формат цены"
 - currency Валюта
     - ERROR_INVALID_CURRENCY "недопустимое значение"
     - NOT_IN_ARRAY "Неверное значение поля"
@@ -30,6 +31,7 @@
 - deliveryTownTime, deliveryTownPrice, deliveryCountryTime, deliveryCountryPrice
     - NOT_GREATER_THAN "недопустимое значение поля"
     - MUST_NOT_BE_BLANK "поле является обязательным"
+    - ERROR_INVALID_MONEY_FORMAT "Недопустимый формат цены"
 - productLifeTime
     - NOT_GREATER_THAN "недопустимое значение поля"
 - warranty Гарантия
