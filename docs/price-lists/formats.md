@@ -8,7 +8,7 @@
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
-        "price":20.16,
+        "price":"20.16",
         "currency":"BYN",
         "comment":"Ваш комментарий",
         "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
