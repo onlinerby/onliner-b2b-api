@@ -1,12 +1,34 @@
 
 # CHANGELOG
 
+## 01.06.2016
+
+* Добавлен опциональный параметр currency для экспорта позиций товара
+ * Изменения затрагивают следующие методы:
+ * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+ * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+ * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+ * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
+
 ## 25.05.2016
 
 * Добавлена поддержка указания цен в BYN при импорте
  * Изменения затрагивают следующие методы:
  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+
+## 02.12.2015
+
+* Добавлен ID позиции во все методы, возвращающие информацию о позициях товаров
+ * Изменения затрагивают следующие методы:
+ * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+ * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
+ * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+ * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+* При импорте прайс-листа можно (опционально) указывать id предложения
+ * Изменения затрагивают следующие методы:
+ * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+ * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
 
 ## 14.01.2015
 
@@ -27,7 +49,6 @@
  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
  * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
- * [docs/price-lists/positions.md](docs/price-lists/positions.md)
 
 * Появились новые поля для позиции товара
  * producer - изготовитель товара, обязательное поле, строка до 500 символов
@@ -43,7 +64,6 @@
  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
  * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
- * [docs/price-lists/positions.md](docs/price-lists/positions.md)
 
 * Удалены следующие поля для позиции товара
  * status
@@ -53,24 +73,9 @@
  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
  * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
- * [docs/price-lists/positions.md](docs/price-lists/positions.md)
 
 * Удален метод обновления курсов валют магазина
 
 * Удалено поле currencyRates из свойств магазина
  * Изменения затрагивают следующие методы:
  * [docs/shop/info.md](docs/shop/info.md)
-
-## 02.12.2015
-
-* Добавлен ID позиции во все методы, возвращающие информацию о позициях товаров
- * Изменения затрагивают следующие методы:
- * [docs/price-lists/positions.md](docs/price-lists/positions.md)
- * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
- * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
- * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
- * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
-* При импорте прайс-листа можно (опционально) указывать id предложения
- * Изменения затрагивают следующие методы:
- * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
- * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
