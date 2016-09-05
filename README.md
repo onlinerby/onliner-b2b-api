@@ -56,7 +56,7 @@
 [Общая информация по удалению позиций из прайс листов](docs/price-lists/delete/info.md)
 
 - [DELETE /pricelists/all](docs/price-lists/delete/all.md)
-    - Удаляет все позиции магацина
+    - Удаляет все позиции магазина
 - [DELETE /pricelists/{positionId}](docs/price-lists/delete/one.md)
     - Удаляет конкретную позицию товара
 - [DELETE /pricelists](docs/price-lists/delete/list.md)
