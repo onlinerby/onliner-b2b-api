@@ -50,6 +50,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/status
     - STATUS_PROCESS_ERROR Обработан с ошибками
     - STATUS_OK Обработан
     - STATUS_PROCESSING В обработке
+    - STATUS_PARSE_ERROR Ошибка валидации
 - **statusText** Текст статуса
 - **date** Дата загрузки прайс-листа
 - **processedCount** Кол-во обработанных позиций прайс-листа
