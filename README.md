@@ -27,8 +27,6 @@
     - Возвращает список производителей в указанном разделе
 - [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products](docs/catalog/products.md)
     - Возвращает список товаров указанного производителя
-- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions](docs/price-lists/positions.md)
-    - Возвращает список позиций указанного товара    
 
 ## Подключение и отключение разделов каталога
 - [POST /sections/{id}](docs/shop/section/add.md)
