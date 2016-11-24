@@ -51,9 +51,9 @@
 - [GET /pricelists/{pricelistId}/report](docs/price-lists/import/report.md)
     - Возвращает список ошибок, возникших во время импорта
     
-### Удаление позиции товара
+### Удаление позиций товаров
 
-[Общая информация по удалению позиций из прайс листов](docs/price-lists/delete/info.md)
+[Общая информация по удалению позиций из прайс-листов](docs/price-lists/delete/info.md)
 
 - [DELETE /pricelists/all](docs/price-lists/delete/all.md)
     - Удаляет все позиции магазина

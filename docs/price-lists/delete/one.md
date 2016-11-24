@@ -1,10 +1,13 @@
 # [Удаление позиций товаров](info.md)
 
-## DELETE /pricelists/{possitionId}
+## DELETE /pricelists/{positionId}
 
 Удаляет конкретную позицию товара для магазина.
 
-- Ресурс **/pricelists/{possitionId}**
+**важно:** указывать нужно ID позиций, выданные B2B-API (поле id в экспорте позиций).
+ID товаров или внутренние ID вашего магазина (артикулы) обрабатываться не будут.
+
+- Ресурс **/pricelists/{positionId}**
 - HTTP-метод **DELETE**
 - Формат ответа **JSON**
 
