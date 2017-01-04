@@ -22,7 +22,7 @@
 |---|---|---|
 |id|integer|Опциональный параметр, который определяет id предложения|
 |price|float|Цена предложения|
-|currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть BYR или BYN|
+|currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть только BYN|
 
 Цена в BYN должна быть указана строкой с копейками через точку, например "20.16".
 
