@@ -1,6 +1,14 @@
 
 # CHANGELOG
 
+## 05.01.2017
+
+* Удалена возможность импортировать и обновлять позиции с использованием валюты BYR
+ * Допустима только валюта BYN
+ * Изменения затрагивают следующие методы:
+ * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+ * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+
 ## 04.01.2017
 
 * Удален опциональный параметр currency для методов экспорта позиций товаров
