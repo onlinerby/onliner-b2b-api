@@ -6,15 +6,16 @@
 * Удалена возможность импортировать и обновлять позиции с использованием валюты BYR
  * Допустима только валюта BYN
  * Изменения затрагивают следующие методы:
- * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
- * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
 * Удален опциональный параметр currency для методов экспорта позиций товаров
  * Теперь цены всегда возвращаются только в текущей (заданной при импорте) валюте
  * Если указан параметр currency, будет ошибка
- * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
- * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
- * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
- * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
+ * Изменения затрагивают следующие методы:
+  * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+  * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+  * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+  * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
 
 ## 10.10.2016
 
