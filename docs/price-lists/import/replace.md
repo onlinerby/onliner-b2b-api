@@ -16,6 +16,7 @@
 |id|integer|Опциональный параметр, который определяет id предложения|
 |price|float|Цена предложения|
 |currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть только BYN|
+|article|string|Полe article - опциональное. Если оно указано, будет производиться поиск товара по названию производителя и артикулу. Если нет - по старой схеме: по категории, производителю и названию|овара|
 
 Цена в BYN должна быть указана строкой с копейками через точку, например "20.16".
 
@@ -32,6 +33,7 @@ Content-Type: application/json
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
+        "article":"ipod16gb",
         "price":"20.16",
         "currency":"BYN",
         "comment":"Ваш комментарий",
@@ -56,6 +58,7 @@ $data = '[
                  "category":"MP3-плееры",
                  "vendor":"Apple",
                  "model":"iPod nano 16Gb (7th generation)",
+                 "article":"ipod16gb",
                  "price":"20.16",
                  "currency":"BYN",
                  "comment":"Ваш комментарий",

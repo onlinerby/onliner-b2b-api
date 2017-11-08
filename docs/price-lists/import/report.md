@@ -62,6 +62,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "category":"MP3-плееры",
             "vendor":"Apple",
             "model":"iPod nano 16Gb (7th generation)",
+            "article":"ipod16gb",
             "price":"2000.00",
             "currency":"BYN",
             "comment":"Ваш комментарий",
