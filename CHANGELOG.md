@@ -6,8 +6,8 @@
 * Добавлены предупреждения в отчет по импорту
  * Плюс добавлен новый статус обработки прайс-листа "Обработан с предупреждениями"
  * Изменения затрагивают следующие методы:
-  * [docs/price-lists/import/replace.md](docs/price-lists/import/status.md)
-  * [docs/price-lists/import/replace.md](docs/price-lists/import/report.md)
+  * [docs/price-lists/import/status.md](docs/price-lists/import/status.md)
+  * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
 
 ## 08.11.2017
 
