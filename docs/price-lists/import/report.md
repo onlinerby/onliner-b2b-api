@@ -20,6 +20,8 @@
     - ERROR_VENDOR_NOT_FOUND "Неверно указан или не указан производитель товара"
 - model Товар
     - ERROR_MODEL_NOT_FOUND "Неверно указана или не указана модель товара"
+- article Артикул
+    - WARNING_INVALID_ARTICLE "Неверно указан артикул" (это предупреждение, а не ошибка)
 - price Цена
     - NOT_LESS_EQUAL_TO "превышает допустимое значение"
     - ERROR_INVALID_MONEY_FORMAT "Недопустимый формат цены"
@@ -95,6 +97,14 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                 {
                     "code": "NOT_GREATER_THAN",
                     "message": "недопустимое значение поля"
+                }
+            ]
+        }
+        "warnings": {
+            "article": [
+                {
+                    "code": "WARNING_INVALID_ARTICLE",
+                    "message": "Неверно указан артикул"
                 }
             ]
         }
