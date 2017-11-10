@@ -49,6 +49,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/status
     - STATUS_IMPORT_ERROR Ошибка импорта
     - STATUS_PROCESS_ERROR Обработан с ошибками
     - STATUS_OK Обработан
+    - STATUS_OK_WITH_WARNINGS Обработан с предупреждениями
     - STATUS_PROCESSING В обработке
     - STATUS_PARSE_ERROR Ошибка валидации
 - **statusText** Текст статуса
