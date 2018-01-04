@@ -11,6 +11,8 @@
  * Изменения затрагивают следующие методы:
   * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
   * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+  * [docs/price-lists/delete/list.md](docs/price-lists/delete/list.md)
+  * [docs/price-lists/delete/one.md](docs/price-lists/delete/one.md)
 
 ## 13.11.2017
 
