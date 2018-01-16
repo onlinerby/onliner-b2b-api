@@ -1,6 +1,19 @@
 
 # CHANGELOG
 
+## 17.01.2018
+
+* Добавлена возможность указывать собственные (внутренние для магазина) ID позиций
+ * Поле id, как и раньше, остается опциональным
+ * Можно продолжать использовать текущие ID
+ * ID должен быть уникален в рамках магазина
+ * Можно использовать любую строку до 50 символов с цифрами и строчными буквами латинского алфавита
+ * Изменения затрагивают следующие методы:
+  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+  * [docs/price-lists/delete/list.md](docs/price-lists/delete/list.md)
+  * [docs/price-lists/delete/one.md](docs/price-lists/delete/one.md)
+
 ## 13.11.2017
 
 * Добавлены предупреждения в отчет по импорту
