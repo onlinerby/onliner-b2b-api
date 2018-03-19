@@ -1,6 +1,14 @@
 
 # CHANGELOG
 
+## 19.03.2018
+
+* Изменения в импорте позиций
+ * В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение
+ * Изменения затрагивают следующие методы:
+  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+
 ## 17.01.2018
 
 * Добавлена возможность указывать собственные (внутренние для магазина) ID позиций
