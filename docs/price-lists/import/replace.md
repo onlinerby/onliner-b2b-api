@@ -17,6 +17,7 @@
 |price|float|Цена предложения|
 |currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть только BYN|
 |article|string|Полe article - опциональное. Если оно указано, будет производиться поиск товара по названию производителя и артикулу (тогда можно не указывать категорию и название товара). Если нет - по старой схеме: по категории, производителю и названию|овара|
+|stockStatus|string|Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается)|
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
 
@@ -49,7 +50,8 @@ Content-Type: application/json
         "deliveryCountryPrice":"2.00",
         "productLifeTime":36,
         "isCashless":"нет",
-        "isCredit":"нет"
+        "isCredit":"нет",
+        "stockStatus": "in_stock"
     }
 ]
 ```
@@ -74,7 +76,8 @@ $data = '[
                  "deliveryCountryPrice":"2.00",
                  "productLifeTime":36,
                  "isCashless":"нет",
-                 "isCredit":"нет"
+                 "isCredit":"нет",
+                 "stockStatus": "in_stock"
              }
          ]';
 $process = curl_init("https://b2bapi.onliner.by/pricelists");

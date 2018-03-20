@@ -47,7 +47,8 @@ Accept: application/json
         "deliveryCountryPrice":"2.00",
         "productLifeTime":36,
         "isCashless":"нет",
-        "isCredit":"нет"
+        "isCredit":"нет",
+        "stockStatus": "in_stock"
     }
 ]
 ```

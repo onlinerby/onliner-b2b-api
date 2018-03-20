@@ -23,6 +23,7 @@
 |id|integer|Опциональный параметр, который определяет id предложения|
 |price|float|Цена предложения|
 |currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть только BYN|
+|stockStatus|string|Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается)|
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
 
@@ -55,7 +56,8 @@ Content-Type: application/json
         "deliveryCountryPrice":"2.00",
         "productLifeTime":36,
         "isCashless":"нет",
-        "isCredit":"нет"
+        "isCredit":"нет",
+        "stockStatus": "in_stock"
     }
 ]
 ```
@@ -81,7 +83,8 @@ curl https://b2bapi.onliner.by/pricelists \
             "deliveryCountryPrice":"2.00",
             "productLifeTime":36,
             "isCashless":"нет",
-            "isCredit":"нет"
+            "isCredit":"нет",
+            "stockStatus": "in_stock"
         }
     ]' \
 -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: Bearer RECEIVED_TOKEN_STRING' -X PATCH
@@ -107,7 +110,8 @@ $data = '[
                  "deliveryCountryPrice":"2.00",
                  "productLifeTime":36,
                  "isCashless":"нет",
-                 "isCredit":"нет"
+                 "isCredit":"нет",
+                 "stockStatus": "in_stock"
              }
          ]';
 $process = curl_init("https://b2bapi.onliner.by/pricelists");
