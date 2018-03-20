@@ -42,6 +42,8 @@
     - NOT_GREATER_THAN "недопустимое значение поля"
 - warranty Гарантия
     - NOT_LESS_EQUAL_TO "превышает допустимое значение"
+- stockStatus Наличие
+    - ERROR_INVALID_STOCK_STATUS "недопустимое значение поля"
 - общие ошибки
     - ERROR_POSITION_LIMIT_EXCEEDED "Превышено максимальное количество позиций данной модели товара"
 

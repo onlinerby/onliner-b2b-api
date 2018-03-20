@@ -1,6 +1,14 @@
 
 # CHANGELOG
 
+## 20.03.2018
+
+* Добавлена возможность указывать наличие товара на складе магазина
+ * Новый опциональный параметр - статус наличия stockStatus
+ * Изменения затрагивают следующие методы:
+  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+
 ## 19.03.2018
 
 * Изменения в импорте позиций

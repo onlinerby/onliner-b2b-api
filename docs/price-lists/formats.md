@@ -23,7 +23,8 @@
         "deliveryCountryPrice":20000,
         "productLifeTime":36,
         "isCashless":"нет",
-        "isCredit":"нет"
+        "isCredit":"нет",
+        "stockStatus": "in_stock"
     }
 ]
 ```
@@ -57,6 +58,7 @@
             <productLifeTime>36</productLifeTime>
             <isCashless>нет</isCashless>
             <isCredit>нет</isCredit>
+            <stockStatus>in_stock</stockStatus>
         </item>
     </items-list>
 </price-list>
@@ -65,5 +67,5 @@
 ## CSV
 
 ```
-MP3-плееры;Apple;iPod nano 16Gb (7th generation);ipod_article;1;20.16;BYN;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10000;5;20000;36;нет;нет
+MP3-плееры;Apple;iPod nano 16Gb (7th generation);ipod_article;1;20.16;BYN;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10000;5;20000;36;нет;нет;in_stock
 ```
