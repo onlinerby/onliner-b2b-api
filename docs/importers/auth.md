@@ -77,6 +77,7 @@ Content-Type: application/json; charset=utf-8
 ### Возможные ошибки для полей<a name="errors"></a>:
 
 |Параметр|Идентификатор ошибки|Текст ошибки|
+|---|---|---|
 |client_id|validation.required|The client_id field is required|
 |client_id|validation.string|Value may only be a string|
 |client_secret|validation.required|The client_secret field is required|
