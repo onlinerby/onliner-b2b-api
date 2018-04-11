@@ -7,4 +7,4 @@
 - [Onliner B2B API для импортера](importer.md)
     - [changelog](importer-changelog.md)
 
-В случае возникновения проблем либо технических вопросов по работе с API, создавайте Issue в данном репозитории.
+В случае возникновения проблем либо технических вопросов по работе с API, [создавайте Issue](https://github.com/onlinerby/onliner-b2b-api/issues/new) в данном репозитории.
