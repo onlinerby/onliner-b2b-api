@@ -22,3 +22,7 @@
     - Обновить наличие товаров
 - [GET /importers/stocklists/{stockListId}/status](docs/importers/status.md)
     - Получение результата импорта наличия товаров
+- [POST /importers/match-reports/requests](docs/importers/match_report_request.md)
+    - Заявка на генерацию отчета по сопоставленным товарам импортера
+- [GET /importers/match-reports/{id}](docs/importers/match_report_get.md)
+    - Получение отчета по сопоставленным товарам импортера

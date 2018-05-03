@@ -1,6 +1,12 @@
 
 # CHANGELOG
 
+## 18.04.2018
+
+* Добавлены методы для получения отчета по сопоставленным товарам импортера
+ * [POST /importers/match-reports/requests](docs/importers/match_report_request.md)
+ * [GET /importers/match-reports/{id}](docs/importers/match_report_get.md)
+
 ## 11.04.2018
 
 * Обновление списка ретейлеров теперь будет происходить асинхронно
