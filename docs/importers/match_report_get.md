@@ -37,7 +37,8 @@ Content-Type: application/json; charset=utf-8
             "positions": [
                 {
                     "shop": {
-                        "name": "Mobile Shop"
+                        "name": "Mobile Shop",
+                        "unp": "123456789"
                     },
                     "price": {
                         "amount": "120.60",
@@ -64,6 +65,7 @@ Content-Type: application/json; charset=utf-8
 |report.N.product.article|string|Артикул|
 |report.N.product.description|string|Описание товара|
 |report.N.positions.N.shop.name|string|Название магазина|
+|report.N.positions.N.shop.unp|string|УНП магазина|
 |report.N.positions.N.price.amount|string|Цена|
 |report.N.positions.N.price.currency|string|Валюта|
 
