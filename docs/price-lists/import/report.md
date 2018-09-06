@@ -22,6 +22,7 @@
     - ERROR_CATEGORY_NOT_FOUND "Неверно указан или не указан раздел"
 - vendor Производитель
     - ERROR_VENDOR_NOT_FOUND "Неверно указан или не указан производитель товара"
+    - ERROR_VENDOR_NOT_ALLOWED "Производитель не попадает под программу «Монобренд»"
 - model Товар
     - ERROR_MODEL_NOT_FOUND "Неверно указана или не указана модель товара"
 - article Артикул
