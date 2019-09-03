@@ -12,6 +12,7 @@ onlyLabels: []
 exemptLabels:
   - pinned
   - security
+  - enhancement
   - "[Status] Maybe Later"
 
 # Label to use when marking as stale
