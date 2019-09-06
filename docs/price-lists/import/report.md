@@ -106,7 +106,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                     "message": "недопустимое значение поля"
                 }
             ]
-        }
+        },
         "warnings": {
             "article": [
                 {

@@ -6,8 +6,16 @@
 
 Например:
 ```json
-{"id":"51b84cd3ddecce0804000001","shopId":1,"fileName":"price-list2013-06-12.csv","size":1036,
-"date":"2013-06-12 13:26:27","status":"STATUS_WAITING","contentType":"csv","statusMessage":null}
+{
+    "id": "51b84cd3ddecce0804000001",
+    "shopId": 1,
+    "fileName": "price-list2013-06-12.csv",
+    "size": 1036,
+    "date": "2013-06-12 13:26:27",
+    "status": "STATUS_WAITING",
+    "contentType":"csv",
+    "statusMessage":null
+}
 ```
 
 Примеры форматов прайс-листов можно посмотреть [здесь](../formats.md)
