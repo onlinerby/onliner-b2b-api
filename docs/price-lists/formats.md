@@ -24,7 +24,22 @@
         "productLifeTime":36,
         "isCashless":"нет",
         "isCredit":"нет",
-        "stockStatus": "in_stock"
+        "stockStatus": "in_stock",
+        "courierDeliveryPrices": {
+            "region-1": {
+                "type": "custom",
+                "amount": "2.99"
+            },
+            "region-2": {
+                "type": "no"
+            },
+            "region-3": {
+                "type": "free"
+            },
+            "region-4": {
+                "type": "default"
+            }
+        }
     }
 ]
 ```
@@ -59,6 +74,25 @@
             <isCashless>нет</isCashless>
             <isCredit>нет</isCredit>
             <stockStatus>in_stock</stockStatus>
+            <courierDeliveryPrices>
+                <item>
+                    <region>region-1</region>
+                    <type>custom</type>
+                    <amount>2.99</amount>
+                </item>
+                <item>
+                    <region>region-2</region>
+                    <type>no</type>
+                </item>
+                <item>
+                    <region>region-3</region>
+                    <type>free</type>
+                </item>
+                <item>
+                    <region>region-4</region>
+                    <type>default</type>
+                </item>
+            </courierDeliveryPrices>
         </item>
     </items-list>
 </price-list>
@@ -90,16 +124,21 @@
     * Только для юр. лиц
     * Кредит
     * Наличие на складе
+    * Курьерская доставка в _НАЗВАНИЕ_РЕГИОНА_ИЗ_ТАРИФНОЙ_СЕТКИ_
+
+Описание значения полей для курьерской доставки доступно в [разделе описания стоимости курьерской доставки](import/courier_delivery.md).
 
 ```
-Раздел;Производитель;Товар;Артикул;"id-предложения";Цена;Валюта;"Описание предложения";Изготовитель;Импортер;"Сервисный центр";Гарантия;"Срок доставки по Минску";"Стоимость доставки по Минску";"Срок доставки по РБ";"Стоимость доставки по РБ";"Срок службы";"Только для юр. лиц";Кредит;"Наличие на складе"
-MP3-плееры;Apple;iPod nano 16Gb (7th generation);ipod_article;1;20.16;BYN;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10.00;5;20.00;36;нет;нет;in_stock
+Раздел;Производитель;Товар;Артикул;"id-предложения";Цена;Валюта;"Описание предложения";Изготовитель;Импортер;"Сервисный центр";Гарантия;"Срок доставки по Минску";"Стоимость доставки по Минску";"Срок доставки по РБ";"Стоимость доставки по РБ";"Срок службы";"Только для юр. лиц";Кредит;"Наличие на складе";"Курьерская доставка в Регион 1";"Курьерская доставка в Регион 2";"Курьерская доставка в Регион 3";"Курьерская доставка в Регион 4"
+MP3-плееры;Apple;iPod nano 16Gb (7th generation);ipod_article;1;20.16;BYN;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10.00;5;20.00;36;нет;нет;in_stock;2.99;Нет доставки;Бесплатная доставка;Общий тариф
 ```
 
 ## CSV
 
 __Данный формат устарел, оставлен для совместимости, но его поддержка будет прекращена.__
 __Вместо него используйте "CSV с названием колонок"__
+
+Указание стоимости курьерской доставки для данного типа прайс-листов невозможно
 
 ```
 MP3-плееры;Apple;iPod nano 16Gb (7th generation);ipod_article;1;20.16;BYN;Ваш комментарий;Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China;ООО Музтрейд, г.Минск, ул. Кропоткина, 12;"ООО Музсервис, г.Минск, ул. П. Бровки, 5\nООО Плеерсервис, г.Гомель, ул. Платонова, 16";12;1;10000;5;20000;36;нет;нет;in_stock

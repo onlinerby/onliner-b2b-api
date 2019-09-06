@@ -21,7 +21,7 @@
 
 ### Пример 1. Список позиций для указанного производителя
 
-```
+```http
 GET /sections/2/manufacturers/851/positions
 Accept: application/json
 ```
@@ -38,8 +38,7 @@ Accept: application/json
         "comment":"Ваш комментарий",
         "producer":"Foxconn,No.2,2nd Donghuan Road,10th Yousong Industrial District,Longhua,Baoan,Shenzhen City,Guangdong Province,China",
         "importer":"ООО Музтрейд, г.Минск, ул. Кропоткина, 12",
-        "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5
-            ООО Плеерсервис, г.Гомель, ул. Платонова, 16",
+        "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
         "warranty":"12",
         "deliveryTownTime":1,
         "deliveryTownPrice":"1.00",
@@ -48,7 +47,16 @@ Accept: application/json
         "productLifeTime":36,
         "isCashless":"нет",
         "isCredit":"нет",
-        "stockStatus": "in_stock"
+        "stockStatus": "in_stock",
+        "courierDeliveryPrices": {
+            "region-1": {
+                "type": "custom",
+                "amount": "2.99"
+            },
+            "region-2": {
+                "type": "no"
+            }
+        }        
     }
 ]
 ```

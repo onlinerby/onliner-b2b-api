@@ -18,6 +18,7 @@
 |currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть только BYN|
 |article|string|Полe article - опциональное. Если оно указано, будет производиться поиск товара по названию производителя и артикулу (тогда можно не указывать категорию и название товара). Если нет - по старой схеме: по категории, производителю и названию|овара|
 |stockStatus|string|Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается)|
+|courierDeliveryPrices|object|Список регионов, стоимость доставки в которые должна быть взята из прайс-листа, а не рассчитываться по тарифной сетке|
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
 
@@ -52,7 +53,13 @@ Content-Type: application/json
         "productLifeTime": 36,
         "isCashless": "нет",
         "isCredit": "нет",
-        "stockStatus": "in_stock"
+        "stockStatus": "in_stock",
+        "courierDeliveryPrices": {
+            "region-1": {
+                "type": "custom",
+                "amount": "2.99"
+            }
+        }
     }
 ]
 ```
@@ -80,7 +87,13 @@ $data = '[
                  "productLifeTime":36,
                  "isCashless":"нет",
                  "isCredit":"нет",
-                 "stockStatus": "in_stock"
+                 "stockStatus": "in_stock",
+                 "courierDeliveryPrices": {
+                     "region-1": {
+                         "type": "custom",
+                         "amount": "2.99"
+                     }
+                 }
              }
          ]';
 

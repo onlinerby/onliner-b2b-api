@@ -1,6 +1,23 @@
 
 # CHANGELOG
 
+## 02.09.2019
+
+* Добавлена подержка указания стоимости [курьерской доставки](docs/price-lists/import/courier_delivery.md)
+  * Регионы доставки настраиваются каждым магазином самостоятельно в разделе Тарифная сетка в личном кабинете
+  * Для CSV-формата можно добавлять колонки с отдельным названием для каждого региона доставки из Тарифной сетки
+  * Для JSON и XML формата идентификатором региона является мнемоника региона из Тарифной сетки
+  * В экспорт прайс-листов будут попадать только те значения, которые были явно заданы в прайс-листе. Тарифная сетка при экспорте не применяется.
+  * Все новые поля опциональны и будут использоваться только в случае их передачи и настройки Тарифной сетки
+  * Изменения затрагивают следующие методы:
+    * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+    * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+    * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
+    * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+    * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+    * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+    * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
+
 ## 08.07.2019
 
 * Добавлена поддержка именованных прайс-листов в формате СSV
