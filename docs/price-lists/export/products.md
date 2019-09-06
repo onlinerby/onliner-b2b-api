@@ -21,7 +21,7 @@
 
 ### Пример 1. Список позиций для указанного товара
 
-```
+```http
 GET /sections/2/manufacturers/851/products/53808/positions
 Accept: application/json
 ```
@@ -47,7 +47,16 @@ Accept: application/json
         "productLifeTime":36,
         "isCashless":"нет",
         "isCredit":"нет",
-        "stockStatus": "in_stock"
+        "stockStatus": "in_stock",
+        "courierDeliveryPrices": {
+            "region-1": {
+                "type": "custom",
+                "amount": "2.99"
+            },
+            "region-2": {
+                "type": "no"
+            }
+        }        
     }
 ]
 ```

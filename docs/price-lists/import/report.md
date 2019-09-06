@@ -14,39 +14,44 @@
 
 ### Возможные ошибки валидации прайс-листа
 
-- id ID позиции
-    - VALUE_NOT_IN_GIVEN_FORMAT "ID позиции может содержать только цифры и строчные буквы латинского алфавита"
-    - ERROR_POSITION_ID_NOT_UNIQUE "ID позиции уже используется, укажите уникальный ID"
-    - ERROR_POSITION_ID_REQUIRED "Укажите ID позиции, может содержать только цифры и строчные буквы латинского алфавита"
-- category Раздел каталога
-    - ERROR_CATEGORY_NOT_FOUND "Неверно указан или не указан раздел"
-- vendor Производитель
-    - ERROR_VENDOR_NOT_FOUND "Неверно указан или не указан производитель товара"
-    - ERROR_VENDOR_NOT_ALLOWED "Производитель не попадает под программу «Монобренд»"
-- model Товар
-    - ERROR_MODEL_NOT_FOUND "Неверно указана или не указана модель товара"
-- article Артикул
-    - WARNING_INVALID_ARTICLE "Неверно указан артикул" (это предупреждение, а не ошибка)
-- price Цена
-    - NOT_LESS_EQUAL_TO "превышает допустимое значение"
-    - ERROR_INVALID_MONEY_FORMAT "Недопустимый формат цены"
-- currency Валюта
-    - ERROR_INVALID_CURRENCY "недопустимое значение"
-    - NOT_IN_ARRAY "Неверное значение поля"
-- isCashless, isCredit Только для юр. лиц, Кредит
-    - ERROR_INVALID_FLAG "недопустимое значение поля"
-- deliveryTownTime, deliveryTownPrice, deliveryCountryTime, deliveryCountryPrice
-    - NOT_GREATER_THAN "недопустимое значение поля"
-    - MUST_NOT_BE_BLANK "поле является обязательным"
-    - ERROR_INVALID_MONEY_FORMAT "Недопустимый формат цены"
-- productLifeTime
-    - NOT_GREATER_THAN "недопустимое значение поля"
-- warranty Гарантия
-    - NOT_LESS_EQUAL_TO "превышает допустимое значение"
-- stockStatus Наличие
-    - ERROR_INVALID_STOCK_STATUS "недопустимое значение поля"
+- `id` ID позиции
+    - `VALUE_NOT_IN_GIVEN_FORMAT` "ID позиции может содержать только цифры и строчные буквы латинского алфавита"
+    - `ERROR_POSITION_ID_NOT_UNIQUE` "ID позиции уже используется, укажите уникальный ID"
+    - `ERROR_POSITION_ID_REQUIRED` "Укажите ID позиции, может содержать только цифры и строчные буквы латинского алфавита"
+- `category` Раздел каталога
+    - `ERROR_CATEGORY_NOT_FOUND` "Неверно указан или не указан раздел"
+- `vendor` Производитель
+    - `ERROR_VENDOR_NOT_FOUND` "Неверно указан или не указан производитель товара"
+    - `ERROR_VENDOR_NOT_ALLOWED` "Производитель не попадает под программу «Монобренд»"
+- `model` Товар
+    - `ERROR_MODEL_NOT_FOUND` "Неверно указана или не указана модель товара"
+- `article` Артикул
+    - `WARNING_INVALID_ARTICLE` "Неверно указан артикул" (это предупреждение, а не ошибка)
+- `price` Цена
+    - `NOT_LESS_EQUAL_TO` "превышает допустимое значение"
+    - `ERROR_INVALID_MONEY_FORMAT` "Недопустимый формат цены"
+- `currency` Валюта
+    - `ERROR_INVALID_CURRENCY` "недопустимое значение"
+    - `NOT_IN_ARRAY` "Неверное значение поля"
+- `isCashless`, `isCredit` Только для юр. лиц, Кредит
+    - `ERROR_INVALID_FLAG` "недопустимое значение поля"
+- `deliveryTownTime`, `deliveryTownPrice`, `deliveryCountryTime`, `deliveryCountryPrice`
+    - `NOT_GREATER_THAN` "недопустимое значение поля"
+    - `MUST_NOT_BE_BLANK` "поле является обязательным"
+    - `ERROR_INVALID_MONEY_FORMAT` "Недопустимый формат цены"
+- `productLifeTime` Срок службы
+    - `NOT_GREATER_THAN` "недопустимое значение поля"
+- `warranty` Гарантия
+    - `NOT_LESS_EQUAL_TO` "превышает допустимое значение"
+- `stockStatus` Наличие
+    - `ERROR_INVALID_STOCK_STATUS` "недопустимое значение поля"
+- `courierDeliveryPrices` Стоимость курьерской доставки    
+    `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
+    `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
+    `ERROR_INVALID_COURIER_DELIVERY_PRICE_TYPE` "Один или несколько регионов доставки содержат некорректный формат стоимости"
+
 - общие ошибки
-    - ERROR_POSITION_LIMIT_EXCEEDED "Превышено максимальное количество позиций данной модели товара"
+    - `ERROR_POSITION_LIMIT_EXCEEDED` "Превышено максимальное количество позиций данной модели товара"
 
 ### Пример 1. Получение отчета по несуществующему прайс-листу
 
