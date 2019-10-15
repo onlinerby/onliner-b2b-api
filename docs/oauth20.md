@@ -20,6 +20,9 @@ curl_setopt($process, CURLOPT_POSTFIELDS, array('grant_type' => 'client_credenti
 $result = curl_exec($process);
 curl_close($process);
 ```
+
+[Пример для платформы 1C](https://help1c.by/poluchenie-tokena-dostupa-dlya-rabotyi-s-api-kataloga-onliner-by/)
+
 # Запрос к API
 После получения _Access Token_ вы можете обращаться к ресурасм API, указав токен одним из двух способов:
 
