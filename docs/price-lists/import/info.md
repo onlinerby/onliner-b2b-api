@@ -29,9 +29,9 @@
 
 Доступные форматы данных прайс-листа: ___json, xml, csv___.
 
-Для того, чтобы ваш прайс был правильно обработан, запрос должен содержать заголовок __CONTENT_TYPE__.
+Для того, чтобы ваш прайс был правильно обработан, запрос должен содержать заголовок __CONTENT-TYPE__.
 
-Доступные значения __CONTENT_TYPE__:
+Доступные значения __CONTENT-TYPE__:
 
 + application/json, application/x-json
 + text/xml, application/xml, application/x-xml
