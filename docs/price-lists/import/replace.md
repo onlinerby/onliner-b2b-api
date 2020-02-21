@@ -15,7 +15,7 @@
 |---|---|---|
 |id|string|Опциональный параметр, который определяет id предложения. Можно использовать внутренний ID вашего магазина. ID должен быть уникален в рамках магазина. Можно использовать строку до 50 символов с цифрами и строчными буквами латинского алфавита|
 |price|string|Цена предложения|
-|currency|string|Валюта предложения, влияет на price, deliveryTownPrice, deliveryCountryPrice, может быть только BYN|
+|currency|string|Валюта предложения, влияет на price может быть только BYN|
 |article|string|Полe article - опциональное. Если оно указано, будет производиться поиск товара по названию производителя и артикулу (тогда можно не указывать категорию и название товара). Если нет - по старой схеме: по категории, производителю и названию|овара|
 |stockStatus|string|Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается)|
 |courierDeliveryPrices|object|Список регионов, стоимость доставки в которые должна быть взята из прайс-листа, а не рассчитываться по тарифной сетке|
@@ -47,9 +47,7 @@ Content-Type: application/json
         "serviceCenters": "ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
         "warranty": "12",
         "deliveryTownTime": 1,
-        "deliveryTownPrice": "1.00",
         "deliveryCountryTime": 5,
-        "deliveryCountryPrice": "2.00",
         "productLifeTime": 36,
         "isCashless": "нет",
         "isCredit": "нет",
@@ -81,9 +79,7 @@ $data = '[
                  "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
                  "warranty":"12",
                  "deliveryTownTime":1,
-                 "deliveryTownPrice":"1.00",
                  "deliveryCountryTime":5,
-                 "deliveryCountryPrice":"2.00",
                  "productLifeTime":36,
                  "isCashless":"нет",
                  "isCredit":"нет",
