@@ -18,9 +18,7 @@
         "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
         "warranty":"12",
         "deliveryTownTime":1,
-        "deliveryTownPrice":10000,
         "deliveryCountryTime":5,
-        "deliveryCountryPrice":20000,
         "productLifeTime":36,
         "isCashless":"нет",
         "isCredit":"нет",
@@ -67,9 +65,7 @@
             <serviceCenters>ООО Музсервис, г.Минск, ул. П. Бровки, 5&#13;ООО Плеерсервис, г.Гомель, ул. Платонова, 16</serviceCenters>
             <warranty>12</warranty>
             <deliveryTownTime>1</deliveryTownTime>
-            <deliveryTownPrice>10000</deliveryTownPrice>
             <deliveryCountryTime>5</deliveryCountryTime>
-            <deliveryCountryPrice>20000</deliveryCountryPrice>
             <productLifeTime>36</productLifeTime>
             <isCashless>нет</isCashless>
             <isCredit>нет</isCredit>

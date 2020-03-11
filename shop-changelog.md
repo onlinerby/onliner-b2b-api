@@ -1,6 +1,19 @@
 
 # CHANGELOG
 
+## 24.02.2020
+
+* Удалены параметры `deliveryTownPrice`, `deliveryCountryPrice` для позиции товара (замены настройками Тарифной сетки)
+  * Изменения затрагивают следующие методы:
+    * [docs/price-lists/formats.md](docs/price-lists/formats.md)
+    * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+    * [docs/price-lists/import/report.md](docs/price-lists/import/report.md)
+    * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+    * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
+    * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+    * [docs/price-lists/export/positions.md](docs/price-lists/export/postions.md)
+    * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+
 ## 02.09.2019
 
 * Добавлена подержка указания стоимости [курьерской доставки](docs/price-lists/import/courier_delivery.md)

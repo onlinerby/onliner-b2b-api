@@ -35,7 +35,7 @@
     - `NOT_IN_ARRAY` "Неверное значение поля"
 - `isCashless`, `isCredit` Только для юр. лиц, Кредит
     - `ERROR_INVALID_FLAG` "недопустимое значение поля"
-- `deliveryTownTime`, `deliveryTownPrice`, `deliveryCountryTime`, `deliveryCountryPrice`
+- `deliveryTownTime`, `deliveryCountryTime`
     - `NOT_GREATER_THAN` "недопустимое значение поля"
     - `MUST_NOT_BE_BLANK` "поле является обязательным"
     - `ERROR_INVALID_MONEY_FORMAT` "Недопустимый формат цены"
@@ -85,9 +85,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "serviceCenters":"ООО Музсервис, г.Минск, ул. П. Бровки, 5\r\nООО Плеерсервис, г.Гомель, ул. Платонова, 16",
             "warranty":"12",
             "deliveryTownTime":-5,
-            "deliveryTownPrice":"100.00",
             "deliveryCountryTime":5,
-            "deliveryCountryPrice":"200.00",
             "productLifeTime":36,
             "isCashless":"xxx",
             "isCredit":"xxx"
