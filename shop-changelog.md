@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+## 26.03.2020
+* Отключена поддержка импорта CSV без названия колонок
+  * Изменения затрагивают следующие методы:
+    * [docs/price-lists/formats.md](docs/price-lists/formats.md)
+    
 ## 24.02.2020
 
 * Удалены параметры `deliveryTownPrice`, `deliveryCountryPrice` для позиции товара (замены настройками Тарифной сетки)
