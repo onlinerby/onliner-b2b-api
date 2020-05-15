@@ -13,6 +13,6 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            Issue ${{ github.event.action }} by [${{ github.event.issue.user.login }}](${{ github.event.issue.user.html_url }})
+            Issue ${{ github.event.action }} by [${{ github.event.sender.login }}](${{ github.event.sender.html_url }})
             [#${{ github.event.issue.number }} ${{ github.event.issue.title }}](${{ github.event.issue.html_url }})
             ${{ github.event.issue.body }}
