@@ -15,5 +15,5 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            [${{ github.event.comment.user.login }} Comment on #${{ github.event.issue.number }} ${{ github.event.issue.title }}](${{ github.event.comment.html_url }})
+            [${{ github.event.comment.user.login }}](${{ github.event.comment.user.html_url }}) Comment on [#${{ github.event.issue.number }} ${{ github.event.issue.title }}](${{ github.event.comment.html_url }})
             ${{ github.event.comment.body }}
