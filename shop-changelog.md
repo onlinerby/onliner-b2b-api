@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+## 01.08.2020
+* Добавлены колонки для указания срока и стоимости рассрочки по халве в импорт CSV 
+  * Изменения затрагивают следующие методы:
+    * [docs/price-lists/formats.md](docs/price-lists/formats.md)
+
 ## 26.03.2020
 * Отключена поддержка импорта CSV без названия колонок
   * Изменения затрагивают следующие методы:
@@ -16,7 +21,7 @@
     * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
     * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
     * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
-    * [docs/price-lists/export/positions.md](docs/price-lists/export/postions.md)
+    * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
     * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
 
 ## 02.09.2019
