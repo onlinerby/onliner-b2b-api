@@ -24,6 +24,8 @@
 |price|string|Цена предложения|
 |currency|string|Валюта предложения, влияет на price может быть только BYN|
 |stockStatus|string|Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается)|
+|termHalva|int|Срок рассрочки по Халве в месяцах (1-99). Обязательный, если указано `priceHalva`|
+|priceHalva|string|Опциональный параметр. Цена в BYN по Халве. Указывается если Цена позиции по Халве отличается от основной цены. Если значение не указано, то будет использована поле `price`|
 |courierDeliveryPrices|object|Список регионов, стоимость доставки в которые должна быть взята из прайс-листа, а не рассчитываться по тарифной сетке|
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
@@ -58,6 +60,8 @@ Content-Type: application/json
         "isCashless": "нет",
         "isCredit": "нет",
         "stockStatus": "in_stock",
+        "termHalva": 3,
+        "priceHalva": "20.16",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
@@ -91,6 +95,8 @@ curl https://b2bapi.onliner.by/pricelists \
             "isCashless":"нет",
             "isCredit":"нет",
             "stockStatus": "in_stock",
+            "termHalva": 3,
+            "priceHalva": "20.16",
             "courierDeliveryPrices": {
                 "region-1": {
                     "type": "custom",
@@ -124,6 +130,8 @@ $data = '[
                  "isCashless":"нет",
                  "isCredit":"нет",
                  "stockStatus": "in_stock",
+                 "termHalva": 3,
+                 "priceHalva": "20.16",
                  "courierDeliveryPrices": {
                      "region-1": {
                          "type": "custom",
