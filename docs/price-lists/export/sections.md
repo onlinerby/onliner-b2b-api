@@ -46,6 +46,8 @@ Accept: application/json
         "isCashless":"нет",
         "isCredit":"нет",
         "stockStatus": "in_stock",
+        "termHalva": "0",
+        "priceHalva": "3",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",

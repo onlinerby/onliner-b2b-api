@@ -2,9 +2,13 @@
 # CHANGELOG
 
 ## 24.08.2020
-* Добавлены поля для указания срока и стоимости рассрочки по халве в импорт CSV, XML и JSON 
+* Добавлены поля для указания срока и стоимости рассрочки по халве в импорт и экспорт CSV, XML и JSON 
   * Изменения затрагивают следующие методы:
     * [docs/price-lists/formats.md](docs/price-lists/formats.md)
+    * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+    * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+    * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+    * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
 
 ## 26.03.2020
 * Отключена поддержка импорта CSV без названия колонок
