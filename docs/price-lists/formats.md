@@ -23,6 +23,8 @@
         "isCashless":"нет",
         "isCredit":"нет",
         "stockStatus": "in_stock",
+        "termHalva": 3,
+        "priceHalva": "20.16",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
@@ -70,6 +72,8 @@
             <isCashless>нет</isCashless>
             <isCredit>нет</isCredit>
             <stockStatus>in_stock</stockStatus>
+            <termHalva>3</termHalva>
+            <priceHalva>20.16</priceHalva>
             <courierDeliveryPrices>
                 <item>
                     <region>region-1</region>
