@@ -45,6 +45,11 @@
     - `NOT_LESS_EQUAL_TO` "превышает допустимое значение"
 - `stockStatus` Наличие
     - `ERROR_INVALID_STOCK_STATUS` "недопустимое значение поля"
+- `price_halva` Цена (Халва)
+    - `WARNING_NO_HALVA_TERM` "Цена (Халва): не указан срок рассрочки"
+    - `WARNING_INVALID_HALVA_PRICE` "Цена (Халва): недопустимое значение поля"
+- `term_halva` Срок рассрочки по халве
+    - `WARNING_INVALID_HALVA_TERM` "Срок рассрочки по Халве: недопустимое значение поля"
 - `courierDeliveryPrices` Стоимость курьерской доставки    
     `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
     `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
@@ -116,6 +121,18 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                     "code": "WARNING_INVALID_ARTICLE",
                     "message": "Неверно указан артикул"
                 }
+            ],
+            "price_halva": [
+                {
+                    "code": "WARNING_INVALID_HALVA_PRICE",
+                    "message": "Цена (Халва): недопустимое значение поля"
+                }                              
+            ],
+            "term_halva": [
+                {
+                    "code": "WARNING_INVALID_HALVA_TERM",
+                    "message": "Срок рассрочки по Халве: недопустимое значение поля"
+                }                              
             ]
         }
     }
