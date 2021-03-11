@@ -4,6 +4,7 @@
 ## 01.04.2021
 * В связи с переходом на новую модель работы с партнерами (Revenue Share) в API внесены следующие изменения:
   * Убрано поле `daysOfWork` из метода [docs/shop/info.md](docs/shop/info.md)
+  * Тарифы на размещение установлены в 0. Соответственно значения полей `sectionsCost`, `dailySectionsCost`, `sectionsCostWithDiscount`, `dailySectionsCostWithDiscount` из метода [docs/shop/info.md](docs/shop/info.md) будут возвращать 0. В будущем данные поля будут удалены. 
 
 ## 24.08.2020
 * Добавлены поля для указания срока и стоимости рассрочки по халве в импорт и экспорт CSV, XML и JSON 

@@ -40,13 +40,13 @@
 }
 ```
 
-**sectionsCost** - Стоимость разделов в месяц – сумма стоимости размещения в каждом подключенном разделе;
+**sectionsCost** - __(deprecated)__ Стоимость разделов в месяц – сумма стоимости размещения в каждом подключенном разделе; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
 
-**dailySectionsCost** - Суточный расход по разделам – сумма суточных стоимостей всех подключенных разделов;
+**dailySectionsCost** - __(deprecated)__ Суточный расход по разделам – сумма суточных стоимостей всех подключенных разделов; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
 
-**sectionsCostWithDiscount** - Стоимость разделов в месяц с учетом всех скидок;
+**sectionsCostWithDiscount** - __(deprecated)__ Стоимость разделов в месяц с учетом всех скидок; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
 
-**dailySectionsCostWithDiscount** - Суточный расход по разделам с учетом всех скидок;
+**dailySectionsCostWithDiscount** - __(deprecated)__ Суточный расход по разделам с учетом всех скидок; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
 
 ### Пример запроса
 
@@ -82,9 +82,9 @@ Accept: application/json
       "package": 3
     }
   },
-  "sectionsCost": 173.46,
-  "dailySectionsCost": 5.78,
-  "sectionsCostWithDiscount": 120.6,
-  "dailySectionsCostWithDiscount": 4.02
+  "sectionsCost": 0,
+  "dailySectionsCost": 0,
+  "sectionsCostWithDiscount": 0,
+  "dailySectionsCostWithDiscount": 0
 }
 ```
