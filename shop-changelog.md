@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+## 15.07.2021
+* Добавлен новый параметр "Onliner Prime" в импорт прайслистов. Изменения касаются следующих методов:
+  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+
 ## 01.04.2021
 * В связи с переходом на новую модель работы с партнерами (Revenue Share) в API внесены следующие изменения:
   * Убрано поле `daysOfWork` из метода [docs/shop/info.md](docs/shop/info.md)
