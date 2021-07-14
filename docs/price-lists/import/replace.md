@@ -20,6 +20,7 @@
 |stockStatus|string|Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается) __*__|
 |termHalva|int|Срок рассрочки по Халве в месяцах (1-99). Обязательный, если указано `priceHalva`|
 |priceHalva|string|Опциональный параметр. Цена в BYN по Халве. Указывается если Цена позиции по Халве отличается от основной цены. Если значение не указано, то будет использована поле `price`|
+|hasOnlinerPrime|string|Опциональный параметр. Участвует ли предложение в Onliner Prime. Возможные значения: да, нет|
 |courierDeliveryPrices|object|Список регионов, стоимость доставки в которые должна быть взята из прайс-листа, а не рассчитываться по тарифной сетке|
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
@@ -58,6 +59,7 @@ Content-Type: application/json
         "stockStatus": "in_stock",
         "termHalva": 3,
         "priceHalva": "20.16",
+        "hasOnlinerPrime": "нет",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
@@ -92,6 +94,7 @@ $data = '[
                  "stockStatus": "in_stock",
                  "termHalva":3,
                  "priceHalva":"20.16",
+                 "hasOnlinerPrime":"нет",
                  "courierDeliveryPrices": {
                      "region-1": {
                          "type": "custom",

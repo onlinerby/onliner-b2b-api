@@ -1,4 +1,16 @@
+
 # CHANGELOG
+
+## 19.12.2021
+* Добавлен новый параметр "Onliner Prime" в импорт прайслистов. Изменения касаются следующих методов:
+  * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
+  * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
+* 
+* Добавлен новый параметр "Onliner Prime" в 'экспорте' прайслистов. Изменения касаются следующих методов:
+    * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+    * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+    * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+    * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
 
 ## 24.08.2021
 * Убраны поля с информацией о скидке на пакет разделов, актуализирована документация
@@ -7,13 +19,6 @@
     * актуализирована документация по полю `balance`
     * поле townsDiscount помечено как неактуальное.
 
-## 22.07.2021
-* Добавлен новый параметр "Onliner Prime" в 'экспорте' прайслистов. Изменения касаются следующих методов:
-  * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
-  * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
-  * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
-  * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
-  
 ## 16.07.2021
 * Убраны поля с информацией о стоимости размещения в каталоге как, не актуальные.
   * Метод [docs/shop/info.md](docs/shop/info.md): убраны поля `sectionsCost`, `dailySectionsCost`, `sectionsCostWithDiscount`, `dailySectionsCostWithDiscount`
