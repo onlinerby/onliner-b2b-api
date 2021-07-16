@@ -19,13 +19,6 @@ HTTP/1.1 204 OK - Раздел успешно отключен
 ```
 
 ```
-HTTP/1.1 400 Bad Request - Не достаточно средств на счете
-```
-```json
-{"id":{id}, "errors": {"Not enough money on balance"}}
-```
-
-```
 HTTP/1.1 400 Bad Request - Магазин заблокирован
 ```
 ```json

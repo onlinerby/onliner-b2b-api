@@ -23,8 +23,6 @@ GET /sections/1
     "id":1,
     "title":"Телевизоры",
     "positionsCount":15,
-    "enabled":false,
-    "monthPrice":1.3,
-    "daylyPrice":0.04
+    "enabled":false
 }
 ```

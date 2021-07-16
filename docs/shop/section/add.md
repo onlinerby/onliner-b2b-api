@@ -45,20 +45,6 @@ HTTP/1.1 400 Bad Request - Попытка подключить уже подкл
 ```
 
 ```
-HTTP/1.1 400 Bad Request - Не достаточно средств на счете
-```
-```json
-{
-   "id":{
-      id
-   },
-   "errors":{
-      "Not enough money on balance"
-   }
-}
-```
-
-```
 HTTP/1.1 404 Not Found - Раздел каталога с указанным id не найден
 ```
 ```json
@@ -84,18 +70,22 @@ HTTP/1.1 201 Created
 
 ```json
 {
-   "id":4,
-   "shopId":1,
-   "section":{
-      "id":1,
-      "title":"Телевизоры",
-      "price":1.3,
-      "discount":10,
-      "products_count":15,
-      "priceWithDiscount":1.17
-   },
-   "discount":0,
-   "discountExpiration":null,
-   "status":1
+    "id": 98496,
+    "shopId": 9584,
+    "section": {
+        "id": 1,
+        "title": "3G-модемы",
+        "products_count": 0,
+        "positions_limit": 0,
+        "positions_limit_coefficient": 5,
+        "product_service": 1,
+        "product_life_time": 12,
+        "status": 1,
+        "show_contacts": 1,
+        "rev_share_percent": 2,
+        "rev_share_max_value": 5
+    },
+    "discount": 0,
+    "discountExpiration": null
 }
 ```

@@ -34,19 +34,10 @@
 {
   "id раздела": {
     "shopSection": "скидка магазина на раздел",
-    "catalogSection": "Общая скидка на раздел",
     "package": "Скидка на пакет"
   }
 }
 ```
-
-**sectionsCost** - __(deprecated)__ Стоимость разделов в месяц – сумма стоимости размещения в каждом подключенном разделе; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
-
-**dailySectionsCost** - __(deprecated)__ Суточный расход по разделам – сумма суточных стоимостей всех подключенных разделов; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
-
-**sectionsCostWithDiscount** - __(deprecated)__ Стоимость разделов в месяц с учетом всех скидок; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
-
-**dailySectionsCostWithDiscount** - __(deprecated)__ Суточный расход по разделам с учетом всех скидок; C 1го апреля значение 0. В будущем данное поле будет удалено из ответа.
 
 ### Пример запроса
 
@@ -73,18 +64,12 @@ Accept: application/json
   "sectionsDiscounts": {
     "2": {
       "shopSection": 13,
-      "catalogSection": 5,
       "package": 3
     },
     "3": {
       "shopSection": 22,
-      "catalogSection": 3,
       "package": 3
     }
-  },
-  "sectionsCost": 0,
-  "dailySectionsCost": 0,
-  "sectionsCostWithDiscount": 0,
-  "dailySectionsCostWithDiscount": 0
+  }
 }
 ```

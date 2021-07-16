@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+## 16.07.2021
+* Убраны поля с информацией о стоимости размещения в каталоге как, не актуальные.
+  * Метод [docs/shop/info.md](docs/shop/info.md): убраны поля `sectionsCost`, `dailySectionsCost`, `sectionsCostWithDiscount`, `dailySectionsCostWithDiscount`
+  * Метод [docs/catalog/section.md](docs/catalog/section.md): убраны поля `monthPrice`, `daylyPrice`
+
 ## 01.04.2021
 * В связи с переходом на новую модель работы с партнерами (Revenue Share) в API внесены следующие изменения:
   * Убрано поле `daysOfWork` из метода [docs/shop/info.md](docs/shop/info.md)
