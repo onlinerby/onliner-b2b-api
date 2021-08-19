@@ -33,8 +33,7 @@
 ```json
 {
   "id раздела": {
-    "shopSection": "скидка магазина на раздел",
-    "package": "Скидка на пакет"
+    "shopSection": "скидка магазина на раздел"
   }
 }
 ```
@@ -63,12 +62,10 @@ Accept: application/json
   },
   "sectionsDiscounts": {
     "2": {
-      "shopSection": 13,
-      "package": 3
+      "shopSection": 13
     },
     "3": {
-      "shopSection": 22,
-      "package": 3
+      "shopSection": 22
     }
   }
 }
