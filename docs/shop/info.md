@@ -14,13 +14,13 @@
 
 ### Описание полей ответа
 
-**balance** - Количество тарифных единиц на счету с учетом порога доверия и обещанного платежа;
+**balance** - Количество BYN на счету с учетом порога доверия;
 
 **isBlocked** - Заблокирован ли магазин;
 
 **shopDiscount** - Скидка на магазин;
 
-**townsDiscount** - Скидки на город
+**townsDiscount** - **(Неактуальное)** Скидки на город
 ```json
 {
   "id города": {
@@ -33,8 +33,7 @@
 ```json
 {
   "id раздела": {
-    "shopSection": "скидка магазина на раздел",
-    "package": "Скидка на пакет"
+    "shopSection": "скидка магазина на раздел"
   }
 }
 ```
@@ -48,27 +47,21 @@ Accept: application/json
 
 ```json
 {
-  "balance": 1500,
+  "balance": 15.01,
   "isBlocked": false,
   "shopDiscount": 1,
   "townsDiscount": {
     "1": {
       "title": "Minsk",
       "discount": 5.2
-    },
-    "2": {
-      "title": "Brest",
-      "discount": 12.5
     }
   },
   "sectionsDiscounts": {
     "2": {
-      "shopSection": 13,
-      "package": 3
+      "shopSection": 13
     },
     "3": {
-      "shopSection": 22,
-      "package": 3
+      "shopSection": 22
     }
   }
 }

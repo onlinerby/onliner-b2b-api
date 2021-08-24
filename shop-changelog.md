@@ -1,6 +1,13 @@
-
 # CHANGELOG
 
+## 24.08.2021
+* Убраны поля с информацией о скидке на пакет разделов, актуализирована документация
+  * Метод [docs/shop/info.md](docs/shop/info.md): 
+    * убрано поле `package`;
+    * актуализирована документация по полю `balance`
+    * поле townsDiscount помечено как неактуальное.
+  
+  
 ## 16.07.2021
 * Убраны поля с информацией о стоимости размещения в каталоге как, не актуальные.
   * Метод [docs/shop/info.md](docs/shop/info.md): убраны поля `sectionsCost`, `dailySectionsCost`, `sectionsCostWithDiscount`, `dailySectionsCostWithDiscount`
