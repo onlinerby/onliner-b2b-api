@@ -6,7 +6,13 @@
     * убрано поле `package`;
     * актуализирована документация по полю `balance`
     * поле townsDiscount помечено как неактуальное.
-  
+
+## 22.07.2021
+* Добавлен новый параметр "Onliner Prime" в 'экспорте' прайслистов. Изменения касаются следующих методов:
+  * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
+  * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
+  * [docs/price-lists/export/products.md](docs/price-lists/export/products.md)
+  * [docs/price-lists/export/sections.md](docs/price-lists/export/sections.md)
   
 ## 16.07.2021
 * Убраны поля с информацией о стоимости размещения в каталоге как, не актуальные.

@@ -48,6 +48,7 @@ Accept: application/json
         "stockStatus": "in_stock",
         "termHalva": "0",
         "priceHalva": "3",
+        "hasOnlinerPrime": "да",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
