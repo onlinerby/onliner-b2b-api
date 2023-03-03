@@ -47,7 +47,6 @@ Accept: application/json
         "isCredit":"нет",
         "stockStatus": "in_stock",
         "termHalva": "0",
-        "priceHalva": "3",
         "hasOnlinerPrime": "да",
         "courierDeliveryPrices": {
             "region-1": {
