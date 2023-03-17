@@ -33,7 +33,7 @@
 - `currency` Валюта
     - `ERROR_INVALID_CURRENCY` "недопустимое значение"
     - `NOT_IN_ARRAY` "Неверное значение поля"
-- `isCashless`, `isCredit` Только для юр. лиц, Кредит
+- `isCashless` Только для юр. лиц
     - `ERROR_INVALID_FLAG` "недопустимое значение поля"
 - `deliveryTownTime`, `deliveryCountryTime`
     - `NOT_GREATER_THAN` "недопустимое значение поля"
@@ -89,16 +89,9 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "deliveryTownTime":-5,
             "deliveryCountryTime":5,
             "productLifeTime":36,
-            "isCashless":"xxx",
-            "isCredit":"xxx"
+            "isCashless":"xxx"
         },
         "errors": {
-            "isCredit": [
-                {
-                    "code": "ERROR_INVALID_FLAG",
-                    "message": "недопустимое значение поля"
-                }
-            ],
             "isCashless": [
                 {
                     "code": "ERROR_INVALID_FLAG",
