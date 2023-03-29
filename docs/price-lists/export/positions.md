@@ -44,7 +44,6 @@ Accept: application/json
         "deliveryCountryTime":5,
         "productLifeTime":36,
         "isCashless":"нет",
-        "isCredit":"нет",
         "stockStatus": "in_stock",
         "termHalva": "0",
         "hasOnlinerPrime": "да",

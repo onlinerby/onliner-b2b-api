@@ -60,7 +60,6 @@ Content-Type: application/json
         "deliveryCountryTime": 5,
         "productLifeTime": 36,
         "isCashless": "нет",
-        "isCredit": "нет",
         "stockStatus": "in_stock",
         "termHalva": 3,
         "hasOnlinerPrime": "нет",
@@ -95,7 +94,6 @@ curl https://b2bapi.onliner.by/pricelists \
             "deliveryCountryTime":5,
             "productLifeTime":36,
             "isCashless":"нет",
-            "isCredit":"нет",
             "stockStatus": "in_stock",
             "termHalva": 3,
             "courierDeliveryPrices": {
@@ -129,7 +127,6 @@ $data = '[
                  "deliveryCountryTime":5,
                  "productLifeTime":36,
                  "isCashless":"нет",
-                 "isCredit":"нет",
                  "stockStatus": "in_stock",
                  "termHalva": 3,
                  "hasOnlinerPrime": "нет",
