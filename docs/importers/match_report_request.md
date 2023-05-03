@@ -1,10 +1,10 @@
 ## Заявка на генерацию отчета по сопоставленным товарам импортера
 
-### POST /importers/match-reports/requests
+## POST /importers/match-reports/requests
 
 При выполнении запроса должен быть указан токен авторизации.
 
-### Пример запроса
+## Пример запроса
 
 ```http
 POST /importers/match-reports/requests
@@ -12,7 +12,7 @@ Accept: application/json
 Authorization: Bearer <token>
 ```
 
-###  Пример ответа
+##  Пример ответа
 
 ```http
 HTTP/1.1 202 Accepted
@@ -29,11 +29,11 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-#### Описание полей ответа
+### Описание полей ответа
 
 Соответствует формату ответа метода для получения отчета `GET /importers/match-reports/{id}`.
 
-### Ответ при ошибке авторизации
+## Ответ при ошибке авторизации
 
 ```http
 HTTP/1.1 401 Unauthorized
