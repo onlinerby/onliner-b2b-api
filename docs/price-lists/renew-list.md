@@ -47,9 +47,9 @@ HTTP/1.1 200 OK
 ```
 ```json
 [
-    {"id":1, "dateUpdate":"2013-01-01 12:00:00"},
-    {"id":2, "dateUpdate":"2013-01-01 12:00:00"},
-    {"id":3, "dateUpdate":"2013-01-01 12:00:00"}
+    {
+        "all": "2013-01-01 12:00:00"
+    }
 ]
 ```
 
@@ -67,10 +67,12 @@ Request Body:
 ]
 ```
 ```
-HTTP/1.1 400 Bad Request
+HTTP/1.1 404 Not Found
 ```
 ```json
 {
-    "errors": {99: "Not found"}
+    "errors": {
+        99: "Not found"
+    }
 }
 ```

@@ -21,7 +21,11 @@ PUT /pricelist/1/renew
 ```
 HTTP/1.1 200 OK
 
-[{"id":1, "dateUpdate":"2013-01-01 12:00:00"}]
+[
+    {
+        "all": "2013-01-01 12:00:00"
+    }
+]
 ```
 
 ### Пример 2. Обновить актуальность несуществующей позиции
@@ -31,10 +35,12 @@ PUT /pricelist/99/renew
 ```
 
 ```
-HTTP/1.1 400 Bad Request
+HTTP/1.1 404 Not Found
 
 {
-    "errors": {99: "Not found"}
+    "errors": {
+        99: "Not found"
+    }
 }
 ```
 
@@ -48,8 +54,13 @@ PUT /pricelist/all/renew
 HTTP/1.1 200 OK
 
 [
-    {"id":1, "dateUpdate":"2013-01-01 12:00:00"},
-    {"id":2, "dateUpdate":"2013-01-01 12:00:00"},
-    {"id":3, "dateUpdate":"2013-01-01 12:00:00"}
+    {
+        "id":1, 
+        "dateUpdate":"2013-01-01 12:00:00"
+    },
+    {
+        "id":2, 
+        "dateUpdate":"2013-01-01 12:00:00"
+    }
 ]
 ```
