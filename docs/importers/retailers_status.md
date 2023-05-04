@@ -66,7 +66,7 @@ Content-Type: application/json; charset=utf-8
 
 ### Возможные ошибки для поля errors:
 
-| Параметр                   | И дентификатор ошибки            | Текст ошибки                                   |
+| Параметр                   | Идентификатор ошибки            | Текст ошибки                                   |
 |----------------------------|----------------------------------|------------------------------------------------|
 | body                       | validation.invalid_json          | Invalid or empty JSON body                     |
 | retailers                  | validation.required              | The retailers field is required                |
