@@ -53,21 +53,21 @@ Content-Type: application/json; charset=utf-8
 
 ### Описание полей ответа
 
-|Параметр|Тип|Описание|
-|---|---|---|
-|id|string|Уникальный идентификатор|
-|importerId|integer|Идентификатор импортера|
-|createdAt|datetime|Время создания заявки на генерацию отчета|
-|updatedAt|datetime|Время обработки заявки|
-|status|string|Статус заявки: pending (ожидает обработки), completed (отчет готов), failed (ошибка генерации: попробуйте еще раз или обратитесь в техподдержку)|
-|report|array|Результаты отчета, если статус - completed, или пустой массив|
-|report.N.product.manufacturer|string|Производитель|
-|report.N.product.article|string|Артикул|
-|report.N.product.description|string|Описание товара|
-|report.N.positions.N.shop.name|string|Название магазина|
-|report.N.positions.N.shop.unp|string|УНП магазина|
-|report.N.positions.N.price.amount|string|Цена|
-|report.N.positions.N.price.currency|string|Валюта|
+| Параметр                            | Тип      | Описание                                                                                                                                         |
+|-------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| id                                  | string   | Уникальный идентификатор                                                                                                                         |
+| importerId                          | integer  | Идентификатор импортера                                                                                                                          |
+| createdAt                           | datetime | Время создания заявки на генерацию отчета                                                                                                        |
+| updatedAt                           | datetime | Время обработки заявки                                                                                                                           |
+| status                              | string   | Статус заявки: pending (ожидает обработки), completed (отчет готов), failed (ошибка генерации: попробуйте еще раз или обратитесь в техподдержку) |
+| report                              | array    | Результаты отчета, если статус - completed, или пустой массив                                                                                    |
+| report.N.product.manufacturer       | string   | Производитель                                                                                                                                    |
+| report.N.product.article            | string   | Артикул                                                                                                                                          |
+| report.N.product.description        | string   | Описание товара                                                                                                                                  |
+| report.N.positions.N.shop.name      | string   | Название магазина                                                                                                                                |
+| report.N.positions.N.shop.unp       | string   | УНП магазина                                                                                                                                     |
+| report.N.positions.N.price.amount   | string   | Цена                                                                                                                                             |
+| report.N.positions.N.price.currency | string   | Валюта                                                                                                                                           |
 
 ## Ответ при ошибке авторизации
 
