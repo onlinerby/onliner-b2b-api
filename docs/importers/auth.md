@@ -1,15 +1,15 @@
 ## Авторизация импортера
 
-### POST /importers/token
+## POST /importers/token
 
-### Параметры запроса<a name="parameters"></a>:
+## Параметры запроса<a name="parameters"></a>:
 
-|Параметр|Тип|Описание|
-|---|---|---|
-|client_id|string|Client ID импортера|
-|client_secret|string|Client Secret импортера|
+| Параметр      | Тип    | Описание                |
+|---------------|--------|-------------------------|
+| client_id     | string | Client ID импортера     |
+| client_secret | string | Client Secret импортера |
 
-### Пример запроса на авторизацию
+## Пример запроса на авторизацию
 
 ```http
 POST /importers/token
@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 ```
 
-### Ответ в случае успешной авторизации<a name="response"></a>:
+## Ответ в случае успешной авторизации<a name="response"></a>:
 
 ```http
 HTTP/1.1 200 OK
@@ -39,19 +39,19 @@ Content-Type: application/json; charset=utf-8
 
 ### Описание полей ответа<a name="fields"></a>:
 
-|Параметр|Тип|Описание|
-|---|---|---|
-|access_token|string|Авторизационный токен|
-|expires_in|integer|Время жизни токена (в секундах)|
-|token_type|string|Тип авторизационного токена|
+| Параметр     | Тип     | Описание                        |
+|--------------|---------|---------------------------------|
+| access_token | string  | Авторизационный токен           |
+| expires_in   | integer | Время жизни токена (в секундах) |
+| token_type   | string  | Тип авторизационного токена     |
 
-### Ответ при ошибке авторизации
+## Ответ при ошибке авторизации
 
 ```http
 HTTP/1.1 404 Not Found
 ```
 
-### Ответ при возникновении ошибок валидации
+## Ответ при возникновении ошибок валидации
 
 ```http
 HTTP/1.1 422 Unprocessable Entity
@@ -76,9 +76,9 @@ Content-Type: application/json; charset=utf-8
 
 ### Возможные ошибки для полей<a name="errors"></a>:
 
-|Параметр|Идентификатор ошибки|Текст ошибки|
-|---|---|---|
-|client_id|validation.required|The client_id field is required|
-|client_id|validation.string|Value may only be a string|
-|client_secret|validation.required|The client_secret field is required|
-|client_secret|validation.string|Value may only be a string|
+| Параметр      | Идентификатор ошибки | Текст ошибки                        |
+|---------------|----------------------|-------------------------------------|
+| client_id     | validation.required  | The client_id field is required     |
+| client_id     | validation.string    | Value may only be a string          |
+| client_secret | validation.required  | The client_secret field is required |
+| client_secret | validation.string    | Value may only be a string          |
