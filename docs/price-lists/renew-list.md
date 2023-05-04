@@ -21,7 +21,7 @@ Accept: application/json
 Authorization: Bearer <token>
 ```
 
-### Пример успешного ответ
+### Пример успешного ответа
 
 ```http
 HTTP/1.1 200 OK
