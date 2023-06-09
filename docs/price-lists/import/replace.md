@@ -20,6 +20,7 @@
 | stockStatus           | string | Опциональный параметр. Наличие: in_stock (есть на складе и доступен для покупки), run_out_of_stock (осталось мало или заканчивается) __*__                                                                                                             |
 | termHalva             | int    | Опциональный параметр. Срок рассрочки по Халве в месяцах (1-99).                                                                                                                                                                                       |
 | hasOnlinerPrime       | string | Опциональный параметр. Участвует ли предложение в Onliner Prime. Возможные значения: да, нет                                                                                                                                                           |
+| pricePromo            | string | Опциональный параметр. Цена предложения со скидкой                                                                                                                                                                                                     |
 | courierDeliveryPrices | object | Список регионов, стоимость доставки в которые должна быть взята из прайс-листа, а не рассчитываться по тарифной сетке                                                                                                                                  |
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
@@ -57,6 +58,7 @@ Content-Type: application/json
         "stockStatus": "in_stock",
         "termHalva": 3,
         "hasOnlinerPrime": "нет",
+        "pricePromo": "18.14",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
@@ -90,6 +92,7 @@ $data = '[
                  "stockStatus": "in_stock",
                  "termHalva":3,
                  "hasOnlinerPrime":"нет",
+                 "pricePromo": "18.14",
                  "courierDeliveryPrices": {
                      "region-1": {
                          "type": "custom",

@@ -47,6 +47,9 @@
     - `ERROR_INVALID_STOCK_STATUS` "недопустимое значение поля"
 - `term_halva` Срок рассрочки по халве
     - `WARNING_INVALID_HALVA_TERM` "Срок рассрочки по Халве: недопустимое значение поля"
+- `pricePromo` Промоцена
+    - `NOT_LESS_EQUAL_TO` "превышает допустимое значение"
+    - `WARNING_INVALID_PRICE_PROMO` "Промоцена: недопустимое значение поля"
 - `courierDeliveryPrices` Стоимость курьерской доставки    
     `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
     `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
