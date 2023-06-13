@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+## 13.06.2023
+
+* Добавлена новая колонка `Промоцена` (**csv**) в импорт и экспорт прайс-листа
+* Добавлено новое поле `pricePromo` (**xml**, **json**) в импорт и экспорт прайс-листа
+
 ## 28.04.2023
 
 * Удалена колонка `Кредит` (**csv**) из импорта и экспорта прайс-листа
@@ -15,7 +20,7 @@
 * Добавлен новый параметр "Onliner Prime" в импорт прайслистов. Изменения касаются следующих методов:
   * [docs/price-lists/import/update.md](docs/price-lists/import/update.md)
   * [docs/price-lists/import/replace.md](docs/price-lists/import/replace.md)
-* 
+
 * Добавлен новый параметр "Onliner Prime" в 'экспорте' прайслистов. Изменения касаются следующих методов:
     * [docs/price-lists/export/manufacturers.md](docs/price-lists/export/manufacturers.md)
     * [docs/price-lists/export/positions.md](docs/price-lists/export/positions.md)
