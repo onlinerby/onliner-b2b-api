@@ -48,6 +48,7 @@ Accept: application/json
         "termHalva": "0",
         "hasOnlinerPrime": "да",
         "pricePromo": "18.00",
+        "increasedMinipayInstallment": "нет",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
