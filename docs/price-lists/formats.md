@@ -75,7 +75,7 @@
             <termHalva>3</termHalva>
             <hasOnlinerPrime>да</hasOnlinerPrime>
             <pricePromo>18.00</pricePromo>
-            <increasedMinipayInstallment>18.00</increasedMinipayInstallment>
+            <increasedMinipayInstallment>нет</increasedMinipayInstallment>
             <courierDeliveryPrices>
                 <item>
                     <region>region-1</region>
