@@ -50,10 +50,12 @@
 - `pricePromo` Цена по промокоду
     - `NOT_LESS_EQUAL_TO` "превышает допустимое значение"
     - `WARNING_INVALID_PRICE_PROMO` "Цена по промокоду: недопустимое значение поля"
+- `increasedMinipayInstallment` - Повышенная рассрочка Minipay
+    - `ERROR_INVALID_FLAG` "недопустимое значение поля"
 - `courierDeliveryPrices` Стоимость курьерской доставки    
-    `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
-    `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
-    `ERROR_INVALID_COURIER_DELIVERY_PRICE_TYPE` "Один или несколько регионов доставки содержат некорректный формат стоимости"
+    - `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
+    - `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
+    - `ERROR_INVALID_COURIER_DELIVERY_PRICE_TYPE` "Один или несколько регионов доставки содержат некорректный формат стоимости"
 
 - общие ошибки
     - `ERROR_POSITION_LIMIT_EXCEEDED` "Превышено максимальное количество позиций данной модели товара"
