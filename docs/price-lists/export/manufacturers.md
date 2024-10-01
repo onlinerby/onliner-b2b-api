@@ -49,6 +49,7 @@ Accept: application/json
         "hasOnlinerPrime": "да",
         "pricePromo":"20.00",
         "increasedMinipayInstallment": "нет",
+        "creditForNationalGoods": "нет",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
