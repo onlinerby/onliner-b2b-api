@@ -54,6 +54,7 @@
     - `ERROR_INVALID_FLAG` "недопустимое значение поля"
 - `creditForNationalGoods` - Кредит на «Родныя тавары»
     - `ERROR_INVALID_FLAG` "недопустимое значение поля"
+    - `ERROR_PRIME_AND_CREDIT_CONFLICT` "нельзя включить одновременно с Onliner Prime"
 - `courierDeliveryPrices` Стоимость курьерской доставки    
     - `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
     - `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
