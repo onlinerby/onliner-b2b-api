@@ -28,6 +28,7 @@
 | hasOnlinerPrime             | string  | Опциональный параметр. Участвует ли предложение в Onliner Prime. Возможные значения: да, нет                                               |
 | pricePromo                  | string  | Опциональный параметр. Цена предложения со скидкой                                                                                         |
 | increasedMinipayInstallment | string  | Опциональный параметр. Доступна ли повышенная рассрочка Minipay для предложения. Возможные значения: да, нет                               |
+| creditForNationalGoods      | string  | Опциональный параметр. Доступен ли кредит на «Родныя тавары». Возможные значения: да, нет                                                                                                                                                              |
 | courierDeliveryPrices       | object  | Список регионов, стоимость доставки в которые должна быть взята из прайс-листа, а не рассчитываться по тарифной сетке                      |
 
 В формате CSV колонки article и id должны быть указаны всегда, но могут содержать пустое значение.
@@ -67,6 +68,7 @@ Content-Type: application/json
         "hasOnlinerPrime": "нет",
         "pricePromo": "18.14",
         "increasedMinipayInstallment": "нет",
+        "creditForNationalGoods": "нет",
         "courierDeliveryPrices": {
             "region-1": {
                 "type": "custom",
@@ -102,6 +104,7 @@ curl https://b2bapi.onliner.by/pricelists \
             "termHalva": 3,
             "pricePromo": "18.14",
             "increasedMinipayInstallment": "нет",
+            "creditForNationalGoods": "нет",
             "courierDeliveryPrices": {
                 "region-1": {
                     "type": "custom",
@@ -136,6 +139,7 @@ $data = '[
                  "stockStatus": "in_stock",
                  "termHalva": 3,
                  "hasOnlinerPrime": "нет",
+                 "creditForNationalGoods": "нет",
                  "courierDeliveryPrices": {
                      "region-1": {
                          "type": "custom",

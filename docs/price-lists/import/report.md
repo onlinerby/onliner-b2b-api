@@ -52,6 +52,9 @@
     - `WARNING_INVALID_PRICE_PROMO` "Цена по промокоду: недопустимое значение поля"
 - `increasedMinipayInstallment` - Повышенная рассрочка Minipay
     - `ERROR_INVALID_FLAG` "недопустимое значение поля"
+- `creditForNationalGoods` - Кредит на «Родныя тавары»
+    - `ERROR_INVALID_FLAG` "недопустимое значение поля"
+    - `ERROR_PRIME_AND_CREDIT_CONFLICT` "нельзя включить одновременно с Onliner Prime"
 - `courierDeliveryPrices` Стоимость курьерской доставки    
     - `ERROR_INVALID_MONEY_FORMAT_COURIER_DELIVERY` "Недопустимый формат стоимости курьерской доставки"
     - `ERROR_UNKNOWN_REGION` "Один или несколько регионов не найдены"
@@ -94,7 +97,8 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "deliveryTownTime":-5,
             "deliveryCountryTime":5,
             "productLifeTime":36,
-            "isCashless":"xxx"
+            "isCashless":"xxx",
+            "creditForNationalGoods": "no"
         },
         "errors": {
             "isCashless": [
@@ -108,7 +112,13 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
                     "code": "NOT_GREATER_THAN",
                     "message": "недопустимое значение поля"
                 }
-            ]
+            ],
+            "creditForNationalGoods": [
+              {
+                "code": "ERROR_INVALID_FLAG",
+                "message": "недопустимое значение поля"
+              }
+            ]          
         },
         "warnings": {
             "article": [
