@@ -39,8 +39,6 @@
     - `NOT_GREATER_THAN` "недопустимое значение поля"
     - `MUST_NOT_BE_BLANK` "поле является обязательным"
     - `ERROR_INVALID_MONEY_FORMAT` "Недопустимый формат цены"
-- `productLifeTime` Срок службы
-    - `NOT_GREATER_THAN` "недопустимое значение поля"
 - `warranty` Гарантия
     - `NOT_LESS_EQUAL_TO` "превышает допустимое значение"
 - `stockStatus` Наличие
@@ -96,7 +94,6 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             "warranty":"12",
             "deliveryTownTime":-5,
             "deliveryCountryTime":5,
-            "productLifeTime":36,
             "isCashless":"xxx",
             "creditForNationalGoods": "no"
         },

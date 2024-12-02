@@ -19,7 +19,6 @@
         "warranty":"12",
         "deliveryTownTime":1,
         "deliveryCountryTime":5,
-        "productLifeTime":36,
         "isCashless":"нет",
         "stockStatus": "in_stock",
         "termHalva": 3,
@@ -70,7 +69,6 @@
             <warranty>12</warranty>
             <deliveryTownTime>1</deliveryTownTime>
             <deliveryCountryTime>5</deliveryCountryTime>
-            <productLifeTime>36</productLifeTime>
             <isCashless>нет</isCashless>
             <stockStatus>in_stock</stockStatus>
             <termHalva>3</termHalva>
