@@ -79,7 +79,6 @@ HTTP/1.1 201 Created
         "positions_limit": 0,
         "positions_limit_coefficient": 5,
         "product_service": 1,
-        "product_life_time": 12,
         "status": 1,
         "show_contacts": 1,
         "rev_share_percent": 2,

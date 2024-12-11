@@ -42,7 +42,6 @@ Accept: application/json
         "warranty":"12",
         "deliveryTownTime":1,
         "deliveryCountryTime":5,
-        "productLifeTime":36,
         "isCashless":"нет",
         "stockStatus": "in_stock",
         "termHalva": "0",
