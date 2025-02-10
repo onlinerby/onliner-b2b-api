@@ -36,7 +36,7 @@
 - `isCashless` Только для юр. лиц
     - `ERROR_INVALID_FLAG` "недопустимое значение поля"
 - `deliveryTownTime`, `deliveryCountryTime`
-    - `NOT_GREATER_THAN` "недопустимое значение поля"
+    - `NOT_GREATER_EQUAL_TO` "недопустимое значение поля"
     - `MUST_NOT_BE_BLANK` "поле является обязательным"
     - `ERROR_INVALID_MONEY_FORMAT` "Недопустимый формат цены"
 - `warranty` Гарантия
@@ -106,7 +106,7 @@ GET /pricelists/51b056d8ee8a1efa1b000001/report
             ],
             "deliveryTownTime": [
                 {
-                    "code": "NOT_GREATER_THAN",
+                    "code": "NOT_GREATER_EQUAL_TO",
                     "message": "недопустимое значение поля"
                 }
             ],
