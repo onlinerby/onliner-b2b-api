@@ -30,6 +30,7 @@ Accept: application/json
 [
     {
         "id": 1,
+        "productId": 1,
         "category":"MP3-плееры",
         "vendor":"Apple",
         "model":"iPod nano 16Gb (7th generation)",
