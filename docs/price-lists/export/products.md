@@ -1,4 +1,4 @@
-# Экспорт данных
+# Deprecated: Экспорт данных
 
 ## GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions
 

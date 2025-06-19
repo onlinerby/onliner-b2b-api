@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+## 19.06.2025
+
+* Роут экспорта позиций для указанного товара [docs/price-lists/export/products.md](docs/price-lists/export/products.md) **объявлен устаревшим**
+
 ## 22.04.2025
 
 * Добавлена новая колонка `Onliner ID` (**csv**) в импорт и экспорт прайс-листа
