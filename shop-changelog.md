@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+## 14.08.2025
+
+* Перемещена документация по импорту и экспорту прайс-листов (https://docs.onliner.by/b2b)
+
 ## 19.06.2025
 
 * Роут экспорта позиций для указанного товара [docs/price-lists/export/products.md](docs/price-lists/export/products.md) **объявлен устаревшим**
