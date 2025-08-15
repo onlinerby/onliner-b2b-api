@@ -36,58 +36,30 @@
 - [DELETE /sections/{id}](docs/shop/section/remove.md)
     - Отключает раздел от магазина
 
-## Прайс-лист
+## Управление позициями товаров
 
-### Импорт
+### Импорт/экспорт прайслистов
 
-[Общая информация по импорту прайс листов](docs/price-lists/import/info.md)
+[Документация](https://docs.onliner.by/b2b)
 
-[Указание стоимости курьерской доставки](docs/price-lists/import/courier_delivery.md)
-
-Есть два способа обновлять позиции прайс-листа - PUT и PATCH.
-PUT надо использовать, когда нужно полностью заменить все позиции (все старые, загруженные до этого, удаляются, а появляются только присланные, которые заполнены без ошибок). PATCH обновляет позиции только для тех товаров, которые были присланы в запросе (те товары, которые не упомянуты, но были загружены ранее, будут отображаться в каталоге без изменений).
-
-- [PATCH /pricelists](docs/price-lists/import/update.md)
-    - Добавление и редактирование позиций
-- [PUT /pricelists](docs/price-lists/import/replace.md)
-    - Загрузка нового прайс-листа
-
-### Отчет по импорту
-
-- [GET /pricelists/{pricelistId}/status](docs/price-lists/import/status.md)
-    - Возвращает статус обработки прайс-листа
-- [GET /pricelists/{pricelistId}/report](docs/price-lists/import/report.md)
-    - Возвращает список ошибок, возникших во время импорта
-    
-### Удаление позиций товаров
+### Удаление позиций
 
 [Общая информация по удалению позиций из прайс-листов](docs/price-lists/delete/info.md)
 
 Удалять позиции перед импортом нет необходимости, так как старые позиции и так удаляются перед добавлением новых.
 
 - [DELETE /pricelists/all](docs/price-lists/delete/all.md)
-    - Удаляет все позиции магазина
+  - Удаляет все позиции магазина
 - [DELETE /pricelists/{positionId}](docs/price-lists/delete/one.md)
-    - Удаляет конкретную позицию товара
+  - Удаляет конкретную позицию товара
 - [DELETE /pricelists](docs/price-lists/delete/list.md)
-    - При наличии списка удаляет позиции товаров, ID которых перечислены в списке
-    
+  - При наличии списка удаляет позиции товаров, ID которых перечислены в списке
+
 ### Обновление актуальности
 
 Обновлять актуальность сразу же после импорта нет необходимости, так как после импорта все обновленные позиции и так актуальны.
 
 - [PUT /pricelist/{id}/renew](docs/price-lists/renew.md)
-    - Обновляет актуальность указанной или всех позиций магазина
+  - Обновляет актуальность указанной или всех позиций магазина
 - [PUT /pricelist/renew](docs/price-lists/renew-list.md)
-    - Обновляет актуальность указанных позиций
-
-### Экспорт прайс листов и позиций товаров
-
-- [GET /positions](docs/price-lists/export/positions.md)
-    - Возвращает полный список позиций магазина
-- [GET /sections/{sectionId}/positions](docs/price-lists/export/sections.md)
-    - Возвращает список позиций для указанного раздела
-- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/positions](docs/price-lists/export/manufacturers.md)
-    - Возвращает список позиций для указанного производителя
-- [GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions](docs/price-lists/export/products.md)
-    - Возвращает список позиций для указанного товара
+  - Обновляет актуальность указанных позиций
